@@ -1,8 +1,8 @@
 import "./App.css";
-import { Header } from "./components/Header";
-import { Products } from "./components/Products";
+import { Header } from "./components/Header.jsx";
+import { Products } from "./components/Products.jsx";
 import { Footer } from "./components/Footer.jsx";
-import { useFilters } from "./hooks/useFilters.js";
+import { useFilters } from "./hooks/useFilters.jsx";
 
 import { IS_DEVELOPMENT } from "./config.js";
 import { products as initialProducts } from "./mocks/products.json";
