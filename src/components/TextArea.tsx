@@ -1,5 +1,5 @@
 import { Form } from "react-bootstrap";
-import { SectionType } from "../types.d";
+import { SectionType } from "../types.d.ts";
 
 interface Props {
   type: SectionType;

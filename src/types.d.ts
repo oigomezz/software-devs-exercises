@@ -1,4 +1,7 @@
-import { type AUTO_LANGUAGE, type SUPPORTED_LANGUAGES } from "./constants";
+import {
+  type AUTO_LANGUAGE,
+  type SUPPORTED_LANGUAGES,
+} from "./utils/constants.ts";
 
 export type Language = keyof typeof SUPPORTED_LANGUAGES;
 export type AutoLanguage = typeof AUTO_LANGUAGE;
