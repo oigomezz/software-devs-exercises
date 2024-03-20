@@ -1,13 +1,16 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { useEffect } from "react";
-import { useDebounce } from "./hooks/useDebounce.ts";
+import { useDebounce, useStore } from "./hooks";
 
 import { Container, Row, Col, Button, Stack } from "react-bootstrap";
-import { ArrowsIcon, ClipboardIcon, SpeakerIcon } from "./components/Icons.tsx";
-import { LanguageSelector } from "./components/LanguageSelector.tsx";
-import { TextArea } from "./components/TextArea";
-import { useStore } from "./hooks/useStore.ts";
+import {
+  ArrowsIcon,
+  ClipboardIcon,
+  LanguageSelector,
+  SpeakerIcon,
+  TextArea,
+} from "./components";
 
 import { AUTO_LANGUAGE, VOICE_LANGUAGES } from "./utils/constants.ts";
 import { SectionType } from "./types.d.ts";
