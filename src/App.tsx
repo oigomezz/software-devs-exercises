@@ -1,67 +1,52 @@
-import { useReducer } from "react";
-import { Action, State } from "./type";
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
-const initialState = {
-  fromLanguage: "auto",
-  toLanguage: "en",
-  fromText: "",
-  result: "",
-  loading: false,
-};
-
-function reducer(state: State, action: Action) {
-  const { type } = action;
-
-  if (type === "INTERCHANGE_LANGUAGES") {
-    return {
-      ...state,
-      fromLanguage: state.toLanguage,
-      toLanguage: state.fromLanguage,
-    };
-  }
-
-  if (type === "SET_FROM_LANGUAGE") {
-    return {
-      ...state,
-      fromLanguage: action.payload,
-    };
-  }
-
-  if (type === "SET_TO_LANGUAGE") {
-    return {
-      ...state,
-      toLanguage: action.payload,
-    };
-  }
-
-  if (type === "SET_FROM_TEXT") {
-    return {
-      ...state,
-      loading: true,
-      fromText: action.payload,
-    };
-  }
-
-  if (type === "SET_RESULT") {
-    return {
-      ...state,
-      loading: false,
-      result: action.payload,
-    };
-  }
-
-  return state;
-}
+import { Container, Row, Col, Button } from "react-bootstrap";
+import { ArrowsIcon } from "./components/Icons.tsx";
+import { LanguageSelector } from "./components/LanguageSelector.tsx";
+import { useStore } from "./hooks/useStore.ts";
+import { AUTO_LANGUAGE } from "./constants.ts";
+import { SectionType } from "./types.d.ts";
 
 function App() {
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const {
+    fromLanguage,
+    toLanguage,
+    interchangeLanguages,
+    setFromLanguage,
+    setToLanguage,
+  } = useStore();
+
   return (
-    <div className="App">
+    <Container fluid>
       <h1>Google Translate</h1>
-    </div>
+
+      <Row>
+        <Col>
+          <LanguageSelector
+            type={SectionType.From}
+            value={fromLanguage}
+            onChange={setFromLanguage}
+          />
+        </Col>
+        <Col xs="auto">
+          <Button
+            variant="link"
+            disabled={fromLanguage === AUTO_LANGUAGE}
+            onClick={interchangeLanguages}
+          >
+            <ArrowsIcon />
+          </Button>
+        </Col>
+        <Col>
+          <LanguageSelector
+            type={SectionType.To}
+            value={toLanguage}
+            onChange={setToLanguage}
+          />
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
