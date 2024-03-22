@@ -1,13 +1,13 @@
 import "./App.css";
 import { useState, useEffect, useRef, useMemo } from "react";
 
-import { type User } from "./types.d";
 import { UsersList } from "./components/UsersList";
+import { SortBy, type User } from "./types.d";
 
 function App() {
   const [users, setUsers] = useState<User[]>([]);
   const [showColors, setShowColors] = useState(false);
-  const [sortByCountry, setSortByCountry] = useState(false);
+  const [sorting, setSorting] = useState<SortBy>(SortBy.NONE);
   const [filterCountry, setFilterCountry] = useState<string | null>(null);
 
   const originalUsers = useRef<User[]>([]);
@@ -17,7 +17,18 @@ function App() {
   };
 
   const toggleSortByCountry = () => {
-    setSortByCountry((prevState) => !prevState);
+    const newSortingValue =
+      sorting === SortBy.NONE ? SortBy.COUNTRY : SortBy.NONE;
+    setSorting(newSortingValue);
+  };
+
+  const handleDelete = (email: string) => {
+    const filteredUsers = users.filter((user) => user.email !== email);
+    setUsers(filteredUsers);
+  };
+
+  const handleChangeSort = (sort: SortBy) => {
+    setSorting(sort);
   };
 
   const handleReset = () => {
@@ -35,17 +46,19 @@ function App() {
   }, [users, filterCountry]);
 
   const sortedUsers = useMemo(() => {
-    return sortByCountry
-      ? filteredUsers.toSorted((a, b) =>
-          a.location.country.localeCompare(b.location.country)
-        )
-      : filteredUsers;
-  }, [filteredUsers, sortByCountry]);
+    if (sorting === SortBy.NONE) return filteredUsers;
 
-  const handleDelete = (email: string) => {
-    const filteredUsers = users.filter((user) => user.email !== email);
-    setUsers(filteredUsers);
-  };
+    const compareProperties: Record<string, (user: User) => any> = {
+      [SortBy.COUNTRY]: (user) => user.location.country,
+      [SortBy.NAME]: (user) => user.name.first,
+      [SortBy.LAST]: (user) => user.name.last,
+    };
+
+    return filteredUsers.toSorted((a, b) => {
+      const extractProperty = compareProperties[sorting];
+      return extractProperty(a).localeCompare(extractProperty(b));
+    });
+  }, [filteredUsers, sorting]);
 
   useEffect(() => {
     fetch("https://randomuser.me/api?results=100")
@@ -65,7 +78,9 @@ function App() {
       <header>
         <button onClick={toggleColors}>Colorear files</button>
         <button onClick={toggleSortByCountry}>
-          {sortByCountry ? "No ordenar por país" : "Ordenar por país"}
+          {sorting === SortBy.COUNTRY
+            ? "No ordenar por país"
+            : "Ordenar por país"}
         </button>
         <button onClick={handleReset}>Resetear estado</button>
         <input
@@ -77,6 +92,7 @@ function App() {
       </header>
       <main>
         <UsersList
+          changeSorting={handleChangeSort}
           deleteUser={handleDelete}
           showColors={showColors}
           users={sortedUsers}

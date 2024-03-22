@@ -14,5 +14,4 @@ Los pasos a seguir:
 - ✅ Implementar una función que permita al usuario restaurar el estado inicial, lo que significa que todas las filas eliminadas se recuperarán.
 - ✅ Implementar una función que permita al usuario filtrar los datos por país.
 - ✅ Evite ordenar nuevamente los datos de los usuarios cuando el usuario esté cambiando el filtro por país.
-- [x] Ordenar haciendo clic en el encabezado de la columna.
-- [x] Manejar cualquier posible error que pueda ocurrir.
+- ✅ Ordenar haciendo clic en el encabezado de la columna.
