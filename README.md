@@ -9,7 +9,7 @@ Los pasos a seguir:
 - ✅ Fetch 100 rows de datos usando la API.
 - ✅ Mostrar los datos en formato de tabla, similar al ejemplo.
 - ✅ Proporcione la opción de colorear filas como se muestra en el ejemplo.
-- [x] Allow the data to be sorted by country as demonstrated in the example.
+- ✅ Permitir que los datos se ordenen por país como se muestra en el ejemplo.
 - [x] Enable the ability to delete a row as shown in the example.
 - [x] Implement a feature that allows the user to restore the initial state, meaning that all deleted rows will be recovered.
 - [x] Handle any potential errors that may occur.

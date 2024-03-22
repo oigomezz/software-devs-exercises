@@ -18,9 +18,9 @@ export function UsersList({ showColors, users }: Readonly<Props>) {
         </tr>
       </thead>
       <tbody className={showColors ? "table--showColors" : ""}>
-        {users.map((user) => {
+        {users.map((user, index: number) => {
           return (
-            <tr key={user.id.value}>
+            <tr key={index}>
               <td>
                 <img
                   src={user.picture.thumbnail}
