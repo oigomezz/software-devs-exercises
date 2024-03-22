@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 
 import { type User } from "./types.d";
 import { UsersList } from "./components/UsersList";
@@ -24,20 +24,23 @@ function App() {
     setUsers(originalUsers.current);
   };
 
-  const filteredUsers =
-    typeof filterCountry === "string" && filterCountry.length > 0
-      ? users.filter((users) => {
-          return users.location.country
+  const filteredUsers = useMemo(() => {
+    return filterCountry != null && filterCountry.length > 0
+      ? users.filter((user) => {
+          return user.location.country
             .toLowerCase()
             .includes(filterCountry.toLowerCase());
         })
       : users;
+  }, [users, filterCountry]);
 
-  const sortedUsers = sortByCountry
-    ? filteredUsers.toSorted((a, b) => {
-        return a.location.country.localeCompare(b.location.country);
-      })
-    : filteredUsers;
+  const sortedUsers = useMemo(() => {
+    return sortByCountry
+      ? filteredUsers.toSorted((a, b) =>
+          a.location.country.localeCompare(b.location.country)
+        )
+      : filteredUsers;
+  }, [filteredUsers, sortByCountry]);
 
   const handleDelete = (email: string) => {
     const filteredUsers = users.filter((user) => user.email !== email);
