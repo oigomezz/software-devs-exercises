@@ -11,7 +11,7 @@ Los pasos a seguir:
 - ✅ Proporcione la opción de colorear filas como se muestra en el ejemplo.
 - ✅ Permitir que los datos se ordenen por país como se muestra en el ejemplo.
 - ✅ Habilite la capacidad de eliminar una fila como se muestra en el ejemplo.
-- [x] Implement a feature that allows the user to restore the initial state, meaning that all deleted rows will be recovered.
+- ✅ Implementar una función que permita al usuario restaurar el estado inicial, lo que significa que todas las filas eliminadas se recuperarán.
 - [x] Handle any potential errors that may occur.
 - [x] Implement a feature that allows the user to filter the data by country.
 - [x] Avoid sorting users again the data when the user is changing filter by country.
