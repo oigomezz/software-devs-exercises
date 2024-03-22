@@ -1,10 +1,11 @@
 import type { User } from "../types";
 
 interface Props {
+  showColors: boolean;
   users: User[];
 }
 
-export function UsersList({ users }: Readonly<Props>) {
+export function UsersList({ showColors, users }: Readonly<Props>) {
   return (
     <table width="100%">
       <thead>
@@ -16,7 +17,7 @@ export function UsersList({ users }: Readonly<Props>) {
           <th>Acciones</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody className={showColors ? "table--showColors" : ""}>
         {users.map((user) => {
           return (
             <tr key={user.id.value}>
