@@ -12,7 +12,7 @@ Los pasos a seguir:
 - ✅ Permitir que los datos se ordenen por país como se muestra en el ejemplo.
 - ✅ Habilite la capacidad de eliminar una fila como se muestra en el ejemplo.
 - ✅ Implementar una función que permita al usuario restaurar el estado inicial, lo que significa que todas las filas eliminadas se recuperarán.
-- [x] Handle any potential errors that may occur.
-- [x] Implement a feature that allows the user to filter the data by country.
+- ✅ Implementar una función que permita al usuario filtrar los datos por país.
 - [x] Avoid sorting users again the data when the user is changing filter by country.
 - [x] Sort by clicking on the column header.
+- [x] Manejar cualquier posible error que pueda ocurrir.
