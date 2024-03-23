@@ -11,7 +11,8 @@ function App() {
   const [filterCountry, setFilterCountry] = useState<string | null>(null);
 
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
 
   const originalUsers = useRef<User[]>([]);
 
@@ -65,18 +66,27 @@ function App() {
 
   useEffect(() => {
     setLoading(true);
-    setError(null);
-    fetch("https://randomuser.me/api?results=10")
-      .then(async (res) => await res.json())
+    setError(false);
+    fetch(
+      `https://randomuser.me/api?results=10&seed=oigomezz&page=${currentPage}`
+    )
+      .then(async (res) => {
+        if (!res.ok) throw new Error("Error en la peticion");
+        return await res.json();
+      })
       .then((res) => {
-        setUsers(res.results);
-        originalUsers.current = res.results;
+        setUsers((prevUsers) => {
+          const newUsers = prevUsers.concat(res.results);
+          originalUsers.current = newUsers;
+          return newUsers;
+        });
       })
       .catch((err) => {
-        setError(err);
+        setError(true);
+        console.error(err);
       })
       .finally(() => setLoading(false));
-  }, []);
+  }, [currentPage]);
 
   return (
     <div className="app">
@@ -97,8 +107,6 @@ function App() {
         />
       </header>
       <main>
-        {loading && <strong>Cargando...</strong>}
-        {error && <p>Ha habido un error</p>}
         {!loading && !error && users.length === 0 && <p>No hay usuarios</p>}
         {users.length > 0 && (
           <UsersList
@@ -107,6 +115,13 @@ function App() {
             showColors={showColors}
             users={sortedUsers}
           />
+        )}
+        {loading && <strong>Cargando...</strong>}
+        {error && <p>Ha habido un error</p>}
+        {!loading && !error && (
+          <button onClick={() => setCurrentPage(currentPage + 1)}>
+            Cargar mas resultados...
+          </button>
         )}
       </main>
     </div>
