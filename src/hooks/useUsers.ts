@@ -12,6 +12,8 @@ export const useUsers = () => {
       initialPageParam: 1,
       queryFn: async ({ pageParam }) => await fetchUsers({ pageParam }),
       getNextPageParam: (lastPage) => lastPage.nextCursor,
+      refetchOnWindowFocus: false,
+      staleTime: 1000 * 3,
     });
 
   return {

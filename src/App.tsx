@@ -23,11 +23,6 @@ function App() {
     setSorting(newSortingValue);
   };
 
-  const handleDelete = (email: string) => {
-    // const filteredUsers = users.filter((user) => user.email !== email);
-    // setUsers(filteredUsers);
-  };
-
   const handleChangeSort = (sort: SortBy) => {
     setSorting(sort);
   };
@@ -84,7 +79,6 @@ function App() {
         {users.length > 0 && (
           <UsersList
             changeSorting={handleChangeSort}
-            deleteUser={handleDelete}
             showColors={showColors}
             users={sortedUsers}
           />
