@@ -2,7 +2,7 @@ import "./App.css";
 import { Container, Stack, Typography, useTheme } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
-import { JavaScriptLogo } from "./JavaScriptLogo";
+import { JavaScriptLogo } from "./assets/JavaScriptLogo";
 import { Start } from "./page/Start";
 import { Game } from "./page/Game";
 import { Results } from "./page/Results";
