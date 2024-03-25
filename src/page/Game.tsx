@@ -14,10 +14,10 @@ import { gradientDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 import { useQuestionsStore } from "../store/questions";
 import { type Question as QuestionType } from "../types";
+import { Footer } from "./Footer";
 
 const getBackgroundColor = (info: QuestionType, index: number) => {
   const { userSelectedAnswer, correctAnswer } = info;
-
   if (userSelectedAnswer == null) return "transparent";
   if (index !== correctAnswer && index !== userSelectedAnswer)
     return "transparent";
@@ -100,6 +100,7 @@ export const Game = () => {
         </IconButton>
       </Stack>
       <Question info={questionInfo} />
+      <Footer />
     </>
   );
 };

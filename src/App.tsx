@@ -5,9 +5,11 @@ import { Start } from "./page/Start";
 import { Game } from "./page/Game";
 
 import { useQuestionsStore } from "./store/questions";
+import { useQuestionsData } from "./hooks/useQuestionsData";
 
 function App() {
   const questions = useQuestionsStore((state) => state.questions);
+  const { unanswered } = useQuestionsData();
   return (
     <main>
       <Container maxWidth="sm">
@@ -23,7 +25,7 @@ function App() {
           </Typography>
         </Stack>
         {questions.length === 0 && <Start />}
-        {questions.length > 0 && <Game />}
+        {questions.length > 0 && unanswered > 0 && <Game />}
       </Container>
     </main>
   );
