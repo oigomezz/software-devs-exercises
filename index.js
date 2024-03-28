@@ -8,6 +8,7 @@ const cors = require('cors')
 const Note = require('./models/Note')
 
 const notFound = require('./middleware/notFound.js')
+const handleErrors = require('./middleware/handleErrors.js')
 
 app.use(cors())
 app.use(express.json())
@@ -22,16 +23,16 @@ app.get('/api/notes', (request, response) => {
   })
 })
 
-app.get('/api/notes/:id', (request, response) => {
+app.get('/api/notes/:id', (request, response, next) => {
   const { id } = request.params
   Note.findById(id)
     .then(note => {
       if (note) return response.json(note)
       response.status(404).end()
-    })
+    }).catch(err => next(err))
 })
 
-app.post('/api/notes', (request, response) => {
+app.post('/api/notes', (request, response, next) => {
   const {
     content,
     important = false
@@ -49,15 +50,12 @@ app.post('/api/notes', (request, response) => {
     important
   })
 
-  try {
-    const savedNote = note.save()
+  note.save().then(savedNote => {
     response.json(savedNote)
-  } catch (error) {
-    console.error(error)
-  }
+  }).catch(err => next(err))
 })
 
-app.put('/api/notes/:id', (request, response) => {
+app.put('/api/notes/:id', (request, response, next) => {
   const { id } = request.params
   const note = request.body
 
@@ -69,12 +67,10 @@ app.put('/api/notes/:id', (request, response) => {
   Note.findByIdAndUpdate(id, newNoteInfo, { new: true })
     .then(result => {
       response.json(result)
-    }).catch((error) => {
-      console.error(error)
-    })
+    }).catch(err => next(err))
 })
 
-app.delete('/api/notes/:id', (request, response) => {
+app.delete('/api/notes/:id', (request, response, next) => {
   const { id } = request.params
   const res = Note.findByIdAndDelete(id)
   if (res === null) return response.sendStatus(404)
@@ -83,6 +79,7 @@ app.delete('/api/notes/:id', (request, response) => {
 })
 
 app.use(notFound)
+app.use(handleErrors)
 
 const PORT = process.env.PORT
 const server = app.listen(PORT, () => {

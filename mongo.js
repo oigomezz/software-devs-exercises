@@ -10,9 +10,7 @@ if (!connectionString) {
   console.error('Recuerda que tienes que tener un archivo .env con las variables de entorno definidas y el MONGO_DB_URI que servirá de connection string. En las clases usamos MongoDB Atlas pero puedes usar cualquier base de datos de MongoDB (local incluso).')
 }
 
-mongoose.connect(connectionString, {
-  useUnifiedTopology: true
-})
+mongoose.connect(connectionString)
   .then(() => {
     console.log('Database connected')
   }).catch(err => {
