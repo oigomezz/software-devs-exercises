@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/oigomezz/Note-API#readme",
   "dependencies": {
-    "express": "4.19.2"
+    "express": "4.19.2",
+    "cors": "2.8.5"
   },
   "devDependencies": {
     "nodemon": "3.1.0",
