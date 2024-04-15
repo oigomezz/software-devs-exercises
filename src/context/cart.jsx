@@ -1,4 +1,4 @@
-import { useReducer, createContext } from "react";
+import { useReducer, createContext, useMemo } from "react";
 import { cartReducer, cartInitialState } from "../reducers/cart.js";
 
 export const CartContext = createContext();
@@ -26,16 +26,15 @@ function useCartReducer() {
 export function CartProvider({ children }) {
   const { state, addToCart, removeFromCart, clearCart } = useCartReducer();
 
-  return (
-    <CartContext.Provider
-      value={{
-        cart: state,
-        addToCart,
-        removeFromCart,
-        clearCart,
-      }}
-    >
-      {children}
-    </CartContext.Provider>
+  const value = useMemo(
+    () => ({
+      cart: state,
+      addToCart,
+      removeFromCart,
+      clearCart,
+    }),
+    [addToCart, clearCart, removeFromCart, state]
   );
+
+  return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
 }
