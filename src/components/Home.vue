@@ -19,7 +19,7 @@
       </Resume>
     </template>
     <template #movements>
-      <Movements></Movements>
+      <Movements :movements="movements" @remove="remove" />
     </template>
   </Layout>
 </template>
