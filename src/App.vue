@@ -1,5 +1,5 @@
 <template>
-   <Suspense>
+  <Suspense>
     <template #default>
       <Home />
     </template>

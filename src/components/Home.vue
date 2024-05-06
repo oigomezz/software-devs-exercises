@@ -23,18 +23,23 @@
     </template>
   </Layout>
 </template>
+
 <script>
 import Layout from "./Layout.vue";
 import Header from "./Header.vue";
 import Resume from "./Resume/Index.vue";
+import Action from "./Action.vue";
 import Movements from "./Movements/Index.vue";
+import Graphic from "./Resume/Graphic.vue";
 
 export default {
   components: {
     Layout,
     Header,
     Resume,
+    Action,
     Movements,
+    Graphic,
   },
   data() {
     return {
