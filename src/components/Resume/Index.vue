@@ -12,40 +12,40 @@
 </template>
 
 <script>
-const currencyFormatter = new Intl.NumberFormat("es-MX", {
-  style: "currency",
-  currency: "MXN",
-});
+const currencyFormatter = new Intl.NumberFormat('es-MX', {
+  style: 'currency',
+  currency: 'MXN'
+})
 
 export default {
   props: {
     totalLabel: {
-      type: String,
+      type: String
     },
     label: {
       type: String,
-      default: null,
+      default: null
     },
     totalAmount: {
-      type: Number,
+      type: Number
     },
     amount: {
       type: Number,
-      default: null,
-    },
+      default: null
+    }
   },
   computed: {
     labelVisual() {
-      return this.label !== null ? this.label : this.totalLabel;
+      return this.label !== null ? this.label : this.totalLabel
     },
     amountVisual() {
-      return this.amount !== null ? this.amount : this.totalAmount;
+      return this.amount !== null ? this.amount : this.totalAmount
     },
     amountCurrency() {
-      return currencyFormatter.format(this.amountVisual);
-    },
-  },
-};
+      return currencyFormatter.format(this.amountVisual)
+    }
+  }
+}
 </script>
 
 <style scoped>

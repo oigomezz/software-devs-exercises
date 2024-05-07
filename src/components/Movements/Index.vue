@@ -16,23 +16,23 @@
 </template>
 
 <script setup>
-import { toRefs, defineProps, defineEmits } from "vue";
-import Movement from "./Movement.vue";
+import { toRefs, defineProps, defineEmits } from 'vue'
+import Movement from './Movement.vue'
 
 const props = defineProps({
   movements: {
     type: Array,
-    default: () => [],
-  },
-});
+    default: () => []
+  }
+})
 
-const { movements } = toRefs(props);
+const { movements } = toRefs(props)
 
-const emit = defineEmits(["remove"]);
+const emit = defineEmits(['remove'])
 
 const remove = (id) => {
-  emit("remove", id);
-};
+  emit('remove', id)
+}
 </script>
 
 <style scoped>

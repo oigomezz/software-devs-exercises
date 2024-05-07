@@ -9,7 +9,7 @@
       <p
         :class="{
           red: isNegative,
-          green: !isNegative,
+          green: !isNegative
         }"
       >
         {{ amountCurrency }}
@@ -19,39 +19,39 @@
 </template>
 
 <script setup>
-import { toRefs, defineProps, defineEmits, computed } from "vue";
+import { toRefs, defineProps, defineEmits, computed } from 'vue'
 
-const currencyFormatter = new Intl.NumberFormat("es-MX", {
-  style: "currency",
-  currency: "MXN",
-});
+const currencyFormatter = new Intl.NumberFormat('es-MX', {
+  style: 'currency',
+  currency: 'MXN'
+})
 
 const props = defineProps({
   id: {
-    type: Number,
+    type: Number
   },
   title: {
-    type: String,
+    type: String
   },
   description: {
-    type: String,
+    type: String
   },
   amount: {
-    type: Number,
-  },
-});
+    type: Number
+  }
+})
 
-const { id, title, description, amount } = toRefs(props);
+const { id, title, description, amount } = toRefs(props)
 
-const amountCurrency = computed(() => currencyFormatter.format(amount.value));
+const amountCurrency = computed(() => currencyFormatter.format(amount.value))
 
-const isNegative = computed(() => amount.value < 0);
+const isNegative = computed(() => amount.value < 0)
 
-const emit = defineEmits(["remove"]);
+const emit = defineEmits(['remove'])
 
 const remove = () => {
-  emit("remove", id.value);
-};
+  emit('remove', id.value)
+}
 </script>
 
 <style scoped>

@@ -10,10 +10,10 @@
 export default {
   methods: {
     reload() {
-      location.reload();
-    },
-  },
-};
+      location.reload()
+    }
+  }
+}
 </script>
 
 <style scoped>

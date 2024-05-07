@@ -11,11 +11,11 @@
 </template>
 
 <script setup>
-import { defineEmits } from "vue";
+import { defineEmits } from 'vue'
 
-const emit = defineEmits(["close"]);
+const emit = defineEmits(['close'])
 
-const close = () => emit("close");
+const close = () => emit('close')
 </script>
 
 <style scoped>

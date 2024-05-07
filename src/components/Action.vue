@@ -40,31 +40,31 @@
 </template>
 
 <script setup>
-import { ref, defineEmits } from "vue";
-import Modal from "./Modal.vue";
+import { ref, defineEmits } from 'vue'
+import Modal from './Modal.vue'
 
-const showModal = ref(false);
-const title = ref("");
-const amount = ref(0);
-const description = ref("");
-const movementType = ref("Ingreso");
+const showModal = ref(false)
+const title = ref('')
+const amount = ref(0)
+const description = ref('')
+const movementType = ref('Ingreso')
 
-const emit = defineEmits(["create"]);
+const emit = defineEmits(['create'])
 
 const submit = () => {
-  showModal.value = !showModal.value;
-  emit("create", {
+  showModal.value = !showModal.value
+  emit('create', {
     title: title.value,
     description: description.value,
-    amount: movementType.value === "Ingreso" ? amount.value : -amount.value,
+    amount: movementType.value === 'Ingreso' ? amount.value : -amount.value,
     time: new Date(),
-    id: new Date(),
-  });
-  title.value = "";
-  description.value = "";
-  amount.value = 0;
-  movementType.value = "Ingreso";
-};
+    id: new Date()
+  })
+  title.value = ''
+  description.value = ''
+  amount.value = 0
+  movementType.value = 'Ingreso'
+}
 </script>
 
 <style scoped>
@@ -107,7 +107,7 @@ textarea {
   padding: 8px;
 }
 
-input[type="number"] {
+input[type='number'] {
   text-align: right;
 }
 
@@ -122,7 +122,7 @@ input[type="number"] {
   margin-left: 8px;
 }
 
-input[type="radio"] {
+input[type='radio'] {
   appearance: none;
   width: 1.24rem;
   height: 1.24rem;
@@ -131,7 +131,7 @@ input[type="radio"] {
   border-radius: 50%;
 }
 
-input[type="radio"]:checked {
+input[type='radio']:checked {
   background-color: var(--brand-blue);
 }
 </style>

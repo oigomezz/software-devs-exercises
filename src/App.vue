@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import SplashScreen from "./components/SplashScreen.vue";
-import { defineAsyncComponent } from "vue";
+import SplashScreen from './components/SplashScreen.vue'
+import { defineAsyncComponent } from 'vue'
 
 export default {
   components: {
@@ -20,12 +20,12 @@ export default {
       () =>
         new Promise((resolve) => {
           setTimeout(() => {
-            resolve(import("./components/Home.vue"));
-          }, 2500);
+            resolve(import('./components/Home.vue'))
+          }, 2500)
         })
-    ),
-  },
-};
+    )
+  }
+}
 </script>
 
 <style>
