@@ -2,7 +2,6 @@ import express from "express";
 import cors from "cors";
 import multer from "multer";
 import csvToJson from "convert-csv-to-json";
-import { log } from "console";
 
 const app = express();
 const port = process.env.PORT ?? 3000;
@@ -10,12 +9,10 @@ const port = process.env.PORT ?? 3000;
 const storage = multer.memoryStorage();
 const upload = multer({ storage });
 
-let userData: Array<Record<string, string>> = [];
-
 app.use(express.json());
+app.use(cors()); // Enable CORS
 
-// Enable CORS
-app.use(cors());
+let userData: Array<Record<string, string>> = [];
 
 app.post("/api/files", upload.single("file"), async (req, res) => {
   // 1. Extract file from request
@@ -48,12 +45,27 @@ app.post("/api/files", upload.single("file"), async (req, res) => {
 
 app.get("/api/users", async (req, res) => {
   // 1. Extract the query param 'q' from the request
+  const { q } = req.query;
   // 2. Validate that we have the query param
+  if (!q)
+    return res.status(500).json({ message: "Query param 'q' is requered" });
+
+  if (Array.isArray(q))
+    return res
+      .status(500)
+      .json({ message: "Query param 'q' must be a string" });
+
   // 3. Filter the data from the db (or memory) whit the query param
-  // 4. Return 200 with the filtered data
-  return res.status(200).json({
-    data: [],
+  const search = q.toString().toLowerCase();
+
+  const filteredData = userData.filter((row) => {
+    return Object.values(row).some((value) =>
+      value.toLowerCase().includes(search)
+    );
   });
+
+  // 4. Return 200 with the filtered data
+  return res.status(200).json({ data: filteredData });
 });
 
 app.listen(port, () => {
