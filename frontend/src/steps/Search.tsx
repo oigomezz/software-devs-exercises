@@ -1,11 +1,20 @@
 import React, { useEffect, useState } from "react";
-import { searchData } from "../services/search";
-import { Data } from "../types";
 import { toast } from "sonner";
+import { useDebounce } from "@uidotdev/usehooks";
+
+import { Data } from "../types";
+import { searchData } from "../services/search";
+
+const DEBOUNCE_TIME = 300;
 
 export const Search = ({ initialData }: { initialData: Data }) => {
   const [data, setData] = useState<Data>(initialData);
-  const [search, setSearch] = useState<string>("");
+  const [search, setSearch] = useState<string>(() => {
+    const searchParams = new URLSearchParams(window.location.search);
+    return searchParams.get("q") ?? "";
+  });
+
+  const debounceSearch = useDebounce(search, DEBOUNCE_TIME);
 
   const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearch(event.target.value);
@@ -13,17 +22,17 @@ export const Search = ({ initialData }: { initialData: Data }) => {
 
   useEffect(() => {
     const newPathName =
-      search === "" ? window.location.pathname : `?q=${search}`;
+      debounceSearch === "" ? window.location.pathname : `?q=${debounceSearch}`;
     window.history.pushState({}, "", newPathName);
-  }, [search]);
+  }, [debounceSearch]);
 
   useEffect(() => {
-    if (!search) {
+    if (!debounceSearch) {
       setData(initialData);
       return;
     }
 
-    searchData(search).then((response) => {
+    searchData(debounceSearch).then((response) => {
       const [err, newData] = response;
       if (err) {
         toast.error(err.message);
@@ -31,7 +40,7 @@ export const Search = ({ initialData }: { initialData: Data }) => {
       }
       if (newData) setData(newData);
     });
-  }, [search, initialData]);
+  }, [debounceSearch, initialData]);
 
   const listData = data.map((row) => (
     <li key={row.id}>
