@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Toaster, toast } from "sonner";
 
 import { uploadFile } from "./services/upload";
+import { Search } from "./steps/Search";
 import { Data } from "./types";
 import "./App.css";
 
@@ -86,7 +87,7 @@ function App() {
           )}
         </form>
       ) : (
-        <div>{JSON.stringify(data)}</div>
+        <Search initialData={data} />
       )}
     </>
   );
