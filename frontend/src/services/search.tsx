@@ -1,10 +1,11 @@
+import { API_URL } from "../config";
 import { type ApiSearchResponse, type Data } from "../types";
 
 export const searchData = async (
   search: string
 ): Promise<[Error | null, Data?]> => {
   try {
-    const res = await fetch(`http://localhost:3000/api/users?q=${search}`, {
+    const res = await fetch(`${API_URL}/users?q=${search}`, {
       method: "GET",
     });
 
