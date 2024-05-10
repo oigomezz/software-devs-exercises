@@ -62,6 +62,7 @@ export const Search = ({ initialData }: { initialData: Data }) => {
           onChange={handleSearch}
           type="search"
           placeholder="Buscar informacion..."
+          defaultValue={debounceSearch}
         />
       </form>
       <ul>{listData}</ul>
