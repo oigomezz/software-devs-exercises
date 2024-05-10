@@ -1,4 +1,4 @@
-ID,Name,Email,Phone
+id,name,email,phone
 1,John Doe,john.doe@example.com,123-456-7890
 2,Jane Smith,jane.smith@example.com,123-456-7891
 3,Bob Johnson,bob.johnson@example.com,123-456-7892
