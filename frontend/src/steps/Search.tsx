@@ -42,17 +42,27 @@ export const Search = ({ initialData }: { initialData: Data }) => {
     });
   }, [debounceSearch, initialData]);
 
-  const listData = data.map((row) => (
-    <li key={row.id}>
-      <article>
-        {Object.entries(row).map(([key, value]) => (
-          <p key={key}>
-            <strong>{key}:</strong> {value}
-          </p>
-        ))}
-      </article>
-    </li>
-  ));
+  const listData = (
+    <div>
+      <table>
+        <tr>
+          {Object.keys(data[0]).map((head, key) => (
+            <th key={key}>{head}</th>
+          ))}
+        </tr>
+        {data.map((row, key) => {
+          return (
+            <tr key={key}>
+              <td>{row.id}</td>
+              <td>{row.name}</td>
+              <td>{row.email}</td>
+              <td>{row.phone}</td>
+            </tr>
+          );
+        })}
+      </table>
+    </div>
+  );
 
   return (
     <div>
@@ -65,7 +75,7 @@ export const Search = ({ initialData }: { initialData: Data }) => {
           defaultValue={debounceSearch}
         />
       </form>
-      <ul>{listData}</ul>
+      {listData}
     </div>
   );
 };

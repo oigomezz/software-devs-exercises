@@ -17,6 +17,11 @@ input[type="search"] {
   padding: 12px 20px;
 }
 
+table {
+  margin-top: 10px;
+  width: 100%;
+}
+
 table,
 th,
 td {
