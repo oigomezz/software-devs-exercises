@@ -24,9 +24,9 @@ El propósito de esta prueba es evaluar tus habilidades en desarrollo Backend y 
 
 - ✅ La barra de búsqueda debe actualizar las tarjetas mostradas para mostrar solo los resultados coincidentes.
 
-- Los datos CSV cargados deben mostrarse como tarjetas en el sitio web, con cada tarjeta mostrando todos los datos de una sola fila del archivo CSV.
+- ✅ Los datos CSV cargados deben mostrarse como tarjetas en el sitio web, con cada tarjeta mostrando todos los datos de una sola fila del archivo CSV.
 
-- Un diseño responsivo que funcione bien tanto en dispositivos de escritorio como móviles.
+- ✅ Un diseño responsivo que funcione bien tanto en dispositivos de escritorio como móviles.
 
 - ✅ Manejo de errores claro y amigable para el usuario.
 

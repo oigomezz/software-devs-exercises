@@ -43,25 +43,19 @@ export const Search = ({ initialData }: { initialData: Data }) => {
   }, [debounceSearch, initialData]);
 
   const listData = (
-    <div>
-      <table>
-        <tr>
-          {Object.keys(data[0]).map((head, key) => (
-            <th key={key}>{head}</th>
-          ))}
-        </tr>
-        {data.map((row, key) => {
-          return (
-            <tr key={key}>
-              <td>{row.id}</td>
-              <td>{row.name}</td>
-              <td>{row.email}</td>
-              <td>{row.phone}</td>
-            </tr>
-          );
-        })}
-      </table>
-    </div>
+    <ul>
+      {data.map((row) => (
+        <li key={row.id}>
+          <article className="card">
+            {Object.entries(row).map(([key, value]) => (
+              <p key={key}>
+                <strong>{key}:</strong> {value}
+              </p>
+            ))}
+          </article>
+        </li>
+      ))}
+    </ul>
   );
 
   return (
@@ -75,7 +69,7 @@ export const Search = ({ initialData }: { initialData: Data }) => {
           defaultValue={debounceSearch}
         />
       </form>
-      {listData}
+      {data && listData}
     </div>
   );
 };

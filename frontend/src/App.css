@@ -1,6 +1,6 @@
 #root {
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
   width: 100%;
 }
@@ -17,13 +17,20 @@ input[type="search"] {
   padding: 12px 20px;
 }
 
-table {
-  margin-top: 10px;
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.card {
+  display: inline-flex;
+  justify-content: space-around;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
   width: 100%;
 }
 
-table,
-th,
-td {
-  border: 1px solid black;
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
