@@ -57,7 +57,7 @@ Usa el archivo `books.json` para obtener los datos de los libros. Puedes añadir
 
 ## Entrevista
 
-Si pasas a la siguiente fase, te pediremos que hagas una entrevista con nosotros. Durante la entrevista, te pediremos que expliques tu código y que hagas algunos cambios en el mismo.
+Durante la entrevista, te pediremos que expliques tu código y que hagas algunos cambios en el mismo.
 
 - Nos tendrás que explicar el código que has escrito y las decisiones que has tomado.
 - Haremos cambios en el JSON y tendrás que adaptar el código en vivo.
