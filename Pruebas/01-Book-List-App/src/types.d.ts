@@ -1,8 +1,17 @@
 export interface Library {
-  book: Book;
+  book: BookAPI;
 }
-
 export interface Book {
+  id: string;
+  title: string;
+  pages: number;
+  genre: string;
+  cover: string;
+  synopsis: string;
+  year: number;
+  author: Author;
+}
+export interface BookAPI {
   title: string;
   pages: number;
   genre: string;

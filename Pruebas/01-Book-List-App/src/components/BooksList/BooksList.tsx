@@ -1,22 +1,19 @@
-import { type Library } from "../../types";
+import { type Book } from "../../types";
 
 interface Props {
-  books: Library[];
+  books: Book[] | undefined;
 }
 
 export function BooksList({ books }: Readonly<Props>) {
   return (
     <ul className="books">
-      {books.map((item) => {
-        const { book } = item;
-        const { cover, title, author, ISBN } = book;
-        const id = ISBN;
+      {books?.map((book) => {
+        const { cover, title, author, id } = book;
         return (
           <li key={id}>
+            <h3>{title}</h3>
             <img src={cover} alt={title} />
-            <div>
-              <strong>{title}</strong> - {author.name}
-            </div>
+            <p>{author.name}</p>
           </li>
         );
       })}
