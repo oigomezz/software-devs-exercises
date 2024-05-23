@@ -1,58 +1,51 @@
-import "./App.css";
-
-import { useBooks } from "./hooks/useBook";
-import { useSearch } from "./hooks/useSearch";
+import { useEffect, useMemo, useState } from "react";
 
 import { BooksList } from "./components/BooksList/BooksList";
+import { Header } from "./components/Header/Header";
+import { useFilters } from "./hooks/useFilters";
+import { Book, type Library } from "./types";
+import { library } from "../books.json";
+import "./App.css";
 
 function App() {
-  const { search, setSearch, error } = useSearch();
-  const { books, loading, sort, setSort, getBooks } = useBooks({ search });
+  const [loading, setLoading] = useState(true);
+  const [books, setBooks] = useState<Book[]>([]);
 
-  const handleSort = () => {
-    setSort(!sort);
-  };
+  const initialBooks: Library[] = [...library];
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    getBooks({ search });
-  };
+  useEffect(() => {
+    const newBooks: Book[] = initialBooks.map((item) => ({
+      id: item.book.ISBN,
+      title: item.book.title,
+      pages: item.book.pages,
+      genre: item.book.genre,
+      cover: item.book.cover,
+      synopsis: item.book.synopsis,
+      year: item.book.year,
+      author: item.book.author,
+    }));
 
-  const handleChange = (event: React.FormEvent<HTMLInputElement>) => {
-    const inputElement = event.target as HTMLInputElement;
-    const newSearch = inputElement.value;
-    setSearch(newSearch);
-    // debounce
-  };
+    setBooks(newBooks);
+    setLoading(false);
+  }, [loading]);
+
+  const { filters, filterBooks } = useFilters();
+
+  const sortedBooks = useMemo(() => {
+    if (!books) return [];
+    return filters.sort
+      ? [...books].sort((a, b) => a.title.localeCompare(b.title))
+      : books;
+  }, [filters.sort, books]);
+
+  const filteredBooks: Book[] = sortedBooks ? filterBooks(sortedBooks) : [];
 
   return (
     <div className="page">
-      <header>
-        <h1>Book List App</h1>
-        <form className="form" onSubmit={handleSubmit}>
-          <div className="row">
-            <input
-              style={{
-                border: "1px solid transparent",
-                borderColor: error ? "red" : "transparent",
-              }}
-              name="query"
-              value={search}
-              onChange={handleChange}
-              placeholder="Search for a book..."
-            />
-            <button type="submit">Buscar</button>
-          </div>
-          <div className="row">
-            <label>
-              <input type="checkbox" onChange={handleSort} checked={sort} />
-              Ordenar alfabeticamente
-            </label>
-          </div>
-        </form>
-        {error && <p style={{ color: "red" }}>{error}</p>}
-      </header>
-      <main>{loading ? <p>Cargando...</p> : <BooksList books={books} />}</main>
+      <Header />
+      <main>
+        {loading ? <p>Cargando...</p> : <BooksList books={filteredBooks} />}
+      </main>
     </div>
   );
 }
