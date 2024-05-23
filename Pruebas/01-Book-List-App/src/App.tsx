@@ -1,14 +1,13 @@
 import "./App.css";
 
-import { BooksList } from "./components/BooksList/BooksList";
 import { useBooks } from "./hooks/useBook";
 import { useSearch } from "./hooks/useSearch";
-import { useState } from "react";
+
+import { BooksList } from "./components/BooksList/BooksList";
 
 function App() {
-  const [sort, setSort] = useState<boolean>(false);
   const { search, setSearch, error } = useSearch();
-  const { books, loading, getBooks } = useBooks({ search, sort });
+  const { books, loading, sort, setSort, getBooks } = useBooks({ search });
 
   const handleSort = () => {
     setSort(!sort);
@@ -53,9 +52,7 @@ function App() {
         </form>
         {error && <p style={{ color: "red" }}>{error}</p>}
       </header>
-      <main>
-        <BooksList books={books} />
-      </main>
+      <main>{loading ? <p>Cargando...</p> : <BooksList books={books} />}</main>
     </div>
   );
 }

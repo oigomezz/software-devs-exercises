@@ -2,7 +2,8 @@ import { type Book } from "../types";
 import { useCallback, useMemo, useRef, useState } from "react";
 import { searchBooks } from "../services/books";
 
-export function useBooks({ search, sort }: { search: string; sort: boolean }) {
+export function useBooks({ search }: { search: string }) {
+  const [sort, setSort] = useState<boolean>(false);
   const [books, setBooks] = useState<Book[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -34,5 +35,5 @@ export function useBooks({ search, sort }: { search: string; sort: boolean }) {
       : books;
   }, [sort, books]);
 
-  return { books: sortedBooks, getBooks, loading, error };
+  return { error, sort, setSort, books: sortedBooks, getBooks, loading };
 }

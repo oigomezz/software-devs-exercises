@@ -20,6 +20,10 @@ main {
   width: 100%;
 }
 
+header {
+  width: inherit;
+}
+
 form {
   display: flexbox;
   justify-content: center;
@@ -44,27 +48,27 @@ form {
 }
 
 form input {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
 .row {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
-}
-
-.row label {
-  padding: 12px;
-}
-
-.row label input {
-  margin-right: 10px;
-}
-
-.row input {
-  margin: auto 0;
+  width: 100%;
 }
 
 .row button {
   margin: auto;
+}
+
+.row label {
+  display: block;
+  padding: 12px;
+}
+
+.row label input[type="checkbox"] {
+  margin: auto 10px;
+  height: 20px;
+  width: fit-content;
 }
