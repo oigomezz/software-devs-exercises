@@ -3,6 +3,7 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
+const cookieParser = require('cookie-parser');
 
 const User = require("./models/User.js");
 
@@ -13,6 +14,7 @@ const bcryptSalt = bcrypt.genSaltSync(10);
 const jwtSecret = process.env.JWT_SECRET;
 
 app.use(express.json());
+app.use(cookieParser());
 app.use(
   cors({
     credentials: true,
@@ -41,7 +43,7 @@ app.post("/register", async (req, res) => {
   }
 });
 
-app.post("/api/login", async (req, res) => {
+app.post("/login", async (req, res) => {
   mongoose.connect(process.env.MONGO_URL);
   const { email, password } = req.body;
   const userDoc = await User.findOne({ email });
@@ -66,6 +68,24 @@ app.post("/api/login", async (req, res) => {
   } else {
     res.json("not found");
   }
+});
+
+app.get("/profile", (req, res) => {
+  mongoose.connect(process.env.MONGO_URL);
+  const { token } = req.cookies;
+  if (token) {
+    jwt.verify(token, jwtSecret, {}, async (err, userData) => {
+      if (err) throw err;
+      const { name, email, _id } = await User.findById(userData.id);
+      res.json({ name, email, _id });
+    });
+  } else {
+    res.json(null);
+  }
+});
+
+app.post("/logout", (req, res) => {
+  res.cookie("token", "").json(true);
 });
 
 const PORT = process.env.PORT || 3001;
