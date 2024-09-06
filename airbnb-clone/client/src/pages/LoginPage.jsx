@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useState } from "react";
 import { Link, Navigate } from "react-router-dom";
 
@@ -9,7 +10,8 @@ export default function LoginPage() {
   async function handleLoginSubmit(event) {
     event.preventDefault();
     try {
-      alert("Login successful");
+      const { data } = await axios.post("/login", { email, password });
+      alert("Login successful", data);
       setRedirect(true);
     } catch (e) {
       alert("Login failed", e.message);
@@ -29,13 +31,13 @@ export default function LoginPage() {
             type="email"
             placeholder="your@email.com"
             value={email}
-            onChange={(ev) => setEmail(ev.target.value)}
+            onChange={(event) => setEmail(event.target.value)}
           />
           <input
             type="password"
             placeholder="password"
             value={password}
-            onChange={(ev) => setPassword(ev.target.value)}
+            onChange={(event) => setPassword(event.target.value)}
           />
           <button className="primary">Login</button>
           <div className="text-center py-2 text-gray-500">
