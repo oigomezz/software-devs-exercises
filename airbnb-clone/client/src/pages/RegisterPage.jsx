@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import axios from "axios"
 
 export default function RegisterPage() {
   const [name, setName] = useState("");
@@ -9,12 +10,17 @@ export default function RegisterPage() {
   async function registerUser(event) {
     event.preventDefault();
     try {
+      await axios.post('/register', {
+        name,
+        email,
+        password,
+      });
       alert("Registration successful. Now you can log in");
     } catch (e) {
       alert("Registration failed. Please try again later", e.message);
     }
   }
-  
+
   return (
     <div className="mt-4 grow flex items-center justify-around">
       <div className="mb-64">
@@ -24,19 +30,19 @@ export default function RegisterPage() {
             type="text"
             placeholder="John Doe"
             value={name}
-            onChange={(ev) => setName(ev.target.value)}
+            onChange={(event) => setName(event.target.value)}
           />
           <input
             type="email"
             placeholder="your@email.com"
             value={email}
-            onChange={(ev) => setEmail(ev.target.value)}
+            onChange={(event) => setEmail(event.target.value)}
           />
           <input
             type="password"
             placeholder="password"
             value={password}
-            onChange={(ev) => setPassword(ev.target.value)}
+            onChange={(event) => setPassword(event.target.value)}
           />
           <button className="primary">Register</button>
           <div className="text-center py-2 text-gray-500">
