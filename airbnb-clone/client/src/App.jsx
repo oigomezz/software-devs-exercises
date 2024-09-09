@@ -3,8 +3,8 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import axios from "axios";
 
-import { UserContextProvider } from "./UserContext.jsx";
-import Layout from "./Layout.jsx";
+import { UserContextProvider } from "./context/UserContext.jsx";
+import Layout from "./components/Layout.jsx";
 
 import IndexPage from "./pages/IndexPage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
