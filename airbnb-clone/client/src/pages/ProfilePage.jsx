@@ -2,6 +2,7 @@ import axios from "axios";
 import { Link, Navigate, useLocation } from "react-router-dom";
 import { useContext, useState } from "react";
 import { UserContext } from "../UserContext.jsx";
+import PlacesPage from "./PlacesPage.jsx";
 
 export default function ProfilePage() {
   const [redirect, setRedirect] = useState(null);
@@ -104,6 +105,7 @@ export default function ProfilePage() {
           </button>
         </div>
       )}
+      {subpage === "places" && <PlacesPage />}
     </div>
   );
 }
