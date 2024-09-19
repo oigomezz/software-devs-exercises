@@ -1,6 +1,8 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { SignedIn, UserButton } from "@clerk/clerk-react";
+import { Dashboard } from "./pages/dashboard";
+import { Auth } from "./pages/auth";
 
 export default function App() {
   return (
@@ -13,8 +15,8 @@ export default function App() {
           </SignedIn>
         </div>
         <Routes>
-          <Route path="/" element={<h1> Dashboard </h1>} />
-          <Route path="/auth" element={<h1> Sing In </h1>} />
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/auth" element={<Auth />} />
         </Routes>
       </div>
     </Router>
