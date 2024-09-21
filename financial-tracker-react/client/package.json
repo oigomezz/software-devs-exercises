@@ -6,14 +6,17 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
     "@clerk/clerk-react": "5.9.1",
+    "@clerk/themes": "2.1.30",
+    "@types/react-table": "7.7.20",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "react-router-dom": "6.26.2"
+    "react-router-dom": "6.26.2",
+    "react-table": "7.8.0"
   },
   "devDependencies": {
     "@eslint/js": "9.9.0",
