@@ -47,6 +47,10 @@ export const FinancialRecordsProvider = ({
 
   useEffect(() => {
     fetchRecords();
+  }, []);
+
+  useEffect(() => {
+    fetchRecords();
   }, [user]);
 
   const addRecord = async (record: FinancialRecord) => {
