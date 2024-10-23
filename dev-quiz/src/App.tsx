@@ -1,8 +1,9 @@
 import "./App.css";
 import { Container, Stack, Typography } from "@mui/material";
+import { useQuestionsStore } from "./store/questions";
 import { Logo } from "./components/Logo";
 import { Home } from "./components/Home";
-import { useQuestionsStore } from "./store/questions";
+import { Results } from "./components/Results";
 
 function App() {
   const questions = useQuestionsStore((state) => state.questions);
@@ -23,6 +24,7 @@ function App() {
         </Stack>
 
         {questions.length === 0 && <Home />}
+        {questions.length > 0 && <Results />}
       </Container>
     </main>
   );
