@@ -7,10 +7,11 @@ import { Results } from "./components/Results";
 
 function App() {
   const questions = useQuestionsStore((state) => state.questions);
+  const date = new Date();
 
   return (
-    <main>
-      <Container maxWidth="sm">
+    <div className="app">
+      <header>
         <Stack
           direction="row"
           gap={2}
@@ -22,11 +23,15 @@ function App() {
             Devs Quiz
           </Typography>
         </Stack>
-
-        {questions.length === 0 && <Home />}
-        {questions.length > 0 && <Results />}
-      </Container>
-    </main>
+      </header>
+      <main>
+        <Container maxWidth="sm">
+          {questions.length === 0 && <Home />}
+          {questions.length > 0 && <Results />}
+        </Container>
+      </main>
+      <footer>{date.getFullYear()}</footer>
+    </div>
   );
 }
 
