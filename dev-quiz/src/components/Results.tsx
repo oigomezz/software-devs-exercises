@@ -17,7 +17,6 @@ export const Results = () => {
 
   return (
     <div style={{ marginTop: "16px" }}>
-      <h2>Resultados</h2>
       <Stack
         direction="row"
         gap={2}
