@@ -7,6 +7,6 @@
 
 .app {
   display: grid;
-  min-height: 90dvh;
+  min-height: 95dvh;
   grid-template-rows: auto 1fr auto;
 }

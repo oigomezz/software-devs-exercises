@@ -10,7 +10,6 @@ export const Home = () => {
 
   const handleSubmit = (event: { preventDefault: () => void }) => {
     event.preventDefault();
-    console.log(search);
     fetchQuestions(search, 5);
   };
 

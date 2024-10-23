@@ -3,7 +3,10 @@ import { type Question } from "../types";
 
 interface State {
   questions: Question[];
+  currentQuestion: number;
   fetchQuestions: (search: string, limit: number) => Promise<void>;
+  goNextQuestion: () => void;
+  goPreviousQuestion: () => void;
   reset: () => void;
 }
 
@@ -11,9 +14,11 @@ const API_URL = import.meta.env.PROD
   ? "https://midu-react-13.surge.sh/"
   : "http://localhost:5173/";
 
-export const useQuestionsStore = create<State>((set) => {
+export const useQuestionsStore = create<State>((set, get) => {
   return {
+    loading: false,
     questions: [],
+    currentQuestion: 0,
     fetchQuestions: async (search: string, limit: number) => {
       const res = await fetch(`${API_URL}/data.json`);
       const json = await res.json();
@@ -24,6 +29,25 @@ export const useQuestionsStore = create<State>((set) => {
         .slice(0, limit);
       set({ questions }, false);
     },
+
+    goNextQuestion: () => {
+      const { currentQuestion, questions } = get();
+      const nextQuestion = currentQuestion + 1;
+
+      if (nextQuestion < questions.length) {
+        set({ currentQuestion: nextQuestion }, false);
+      }
+    },
+
+    goPreviousQuestion: () => {
+      const { currentQuestion } = get();
+      const previousQuestion = currentQuestion - 1;
+
+      if (previousQuestion >= 0) {
+        set({ currentQuestion: previousQuestion }, false);
+      }
+    },
+
     reset: () => {
       set({ questions: [] }, false);
     },
