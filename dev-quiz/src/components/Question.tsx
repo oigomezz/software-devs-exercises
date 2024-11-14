@@ -1,3 +1,5 @@
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { gradientDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import {
   Card,
   List,
@@ -6,8 +8,6 @@ import {
   ListItemText,
   Typography,
 } from "@mui/material";
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { gradientDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 import { type Question as QuestionType } from "../types";
 

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useQuestionsStore } from "../store/questions";
 
 import { IconButton, InputBase } from "@mui/material";
+import AddCircleOutlineOutlinedIcon from "@mui/icons-material/AddCircleOutlineOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 
 export const Home = () => {
@@ -29,6 +30,16 @@ export const Home = () => {
 
       <IconButton type="submit" sx={{ p: "10px" }} aria-label="search">
         <SearchIcon />
+      </IconButton>
+      
+      <IconButton
+        onClick={() => {
+          alert("Add question");
+        }}
+        sx={{ p: "10px" }}
+        aria-label="search"
+      >
+        <AddCircleOutlineOutlinedIcon />
       </IconButton>
     </form>
   );
