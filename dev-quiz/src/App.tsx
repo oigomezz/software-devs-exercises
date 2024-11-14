@@ -4,6 +4,7 @@ import { useQuestionsStore } from "./store/questions";
 import { Logo } from "./components/Logo";
 import { Home } from "./components/Home";
 import { Results } from "./components/Results";
+import { Recent } from "./components/Recent";
 
 function App() {
   const questions = useQuestionsStore((state) => state.questions);
@@ -27,6 +28,7 @@ function App() {
       <main>
         <Container maxWidth="sm">
           {questions.length === 0 && <Home />}
+          {questions.length === 0 && <Recent />}
           {questions.length > 0 && <Results />}
         </Container>
       </main>
