@@ -11,8 +11,9 @@ import { type Question } from "../types";
 import { useQuestionsStore } from "../store/questions";
 
 export const Recent = () => {
-  const fetchQuestion = useQuestionsStore((state) => state.fetchQuestion);
   const [questions, setQuestions] = useState<Question[]>([]);
+  
+  const fetchQuestion = useQuestionsStore((state) => state.fetchQuestion);
 
   useEffect(() => {
     async function fetching() {

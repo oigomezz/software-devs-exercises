@@ -9,6 +9,9 @@ interface State {
   goNextQuestion: () => void;
   goPreviousQuestion: () => void;
   reset: () => void;
+  editQuestion: boolean;
+  edit: (id: number) => void;
+  add: () => void;
 }
 
 const API_URL = import.meta.env.PROD
@@ -17,7 +20,7 @@ const API_URL = import.meta.env.PROD
 
 export const useQuestionsStore = create<State>((set, get) => {
   return {
-    loading: false,
+    editQuestion: false,
     questions: [],
     currentQuestion: 0,
     fetchQuestion: async (id: number) => {
@@ -56,7 +59,15 @@ export const useQuestionsStore = create<State>((set, get) => {
     },
 
     reset: () => {
-      set({ questions: [] }, false);
+      set({ questions: [], editQuestion: false }, false);
+    },
+
+    edit: (id: number) => {
+      set({ currentQuestion: id, editQuestion: true }, false);
+    },
+
+    add: () => {
+      set({ editQuestion: true }, false);
     },
   };
 });

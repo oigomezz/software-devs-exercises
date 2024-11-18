@@ -6,6 +6,7 @@ import AddCircleOutlineOutlinedIcon from "@mui/icons-material/AddCircleOutlineOu
 import SearchIcon from "@mui/icons-material/Search";
 
 export const Home = () => {
+  const add = useQuestionsStore((state) => state.add);
   const fetchQuestions = useQuestionsStore((state) => state.fetchQuestions);
   const [search, setSearch] = useState("");
 
@@ -23,7 +24,7 @@ export const Home = () => {
       <InputBase
         onChange={(e) => setSearch(e.target.value)}
         sx={{ ml: 1, flex: 1 }}
-        placeholder="search"
+        placeholder="Buscar"
         inputProps={{ "aria-label": "questions" }}
         value={search}
       />
@@ -32,13 +33,7 @@ export const Home = () => {
         <SearchIcon />
       </IconButton>
 
-      <IconButton
-        onClick={() => {
-          alert("Add question");
-        }}
-        sx={{ p: "10px" }}
-        aria-label="search"
-      >
+      <IconButton onClick={() => add()} sx={{ p: "10px" }} aria-label="search">
         <AddCircleOutlineOutlinedIcon />
       </IconButton>
     </form>

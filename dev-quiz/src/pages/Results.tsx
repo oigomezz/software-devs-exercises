@@ -1,19 +1,22 @@
 import { Button, IconButton, Stack } from "@mui/material";
-import { ArrowBackIosNew, ArrowForwardIos } from "@mui/icons-material";
+import { ArrowBackIosNew, ArrowForwardIos, Edit } from "@mui/icons-material";
 
 import { useQuestionsStore } from "../store/questions";
 import { Question } from "../components/Question";
 
 export const Results = () => {
+  const edit = useQuestionsStore((state) => state.edit);
   const reset = useQuestionsStore((state) => state.reset);
   const questions = useQuestionsStore((state) => state.questions);
   const currentQuestion = useQuestionsStore((state) => state.currentQuestion);
-  const goNextQuestion = useQuestionsStore((state) => state.goNextQuestion);
-  const goPreviousQuestion = useQuestionsStore(
-    (state) => state.goPreviousQuestion
-  );
+  const goNext = useQuestionsStore((state) => state.goNextQuestion);
+  const goPrev = useQuestionsStore((state) => state.goPreviousQuestion);
 
   const questionInfo = questions[currentQuestion];
+
+  const handleEdit = (id: number) => {
+    edit(id);
+  };
 
   return (
     <div style={{ marginTop: "16px" }}>
@@ -23,15 +26,12 @@ export const Results = () => {
         alignItems="center"
         justifyContent="center"
       >
-        <IconButton
-          onClick={goPreviousQuestion}
-          disabled={currentQuestion === 0}
-        >
+        <IconButton onClick={goPrev} disabled={currentQuestion === 0}>
           <ArrowBackIosNew />
         </IconButton>
         {currentQuestion + 1} / {questions.length}
         <IconButton
-          onClick={goNextQuestion}
+          onClick={goNext}
           disabled={currentQuestion >= questions.length - 1}
         >
           <ArrowForwardIos />
@@ -40,7 +40,12 @@ export const Results = () => {
       <Question info={questionInfo} />
 
       <div style={{ marginTop: "16px" }}>
-        <Button onClick={() => reset()}>¡Volver al inicio!</Button>
+        <Stack direction="row" alignItems="center" justifyContent="center">
+          <Button onClick={() => reset()}>Volver al inicio</Button>
+          <IconButton onClick={() => handleEdit(questionInfo.id)}>
+            <Edit />
+          </IconButton>
+        </Stack>
       </div>
     </div>
   );
