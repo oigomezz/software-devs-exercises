@@ -2,7 +2,7 @@ import { Button, IconButton, Stack } from "@mui/material";
 import { ArrowBackIosNew, ArrowForwardIos } from "@mui/icons-material";
 
 import { useQuestionsStore } from "../store/questions";
-import { Question } from "./Question";
+import { Question } from "../components/Question";
 
 export const Results = () => {
   const reset = useQuestionsStore((state) => state.reset);

@@ -15,8 +15,9 @@ export const Recent = () => {
   useEffect(() => {
     async function fetching() {
       const result = await fetch("http://localhost:5173/data.json");
-      const json = await result.json();
-      setQuestions(json.slice(-5));
+      let json = await result.json();
+      json = json.slice(-5);
+      setQuestions(json.reverse());
     }
 
     fetching();
@@ -41,6 +42,9 @@ export const Recent = () => {
           {questions.map((question, index) => (
             <ListItem key={index} disablePadding divider>
               <ListItemButton
+                onClick={() => {
+                  alert(`Go to question ${JSON.stringify(question)}`);
+                }}
                 sx={{
                   backgroundColor: "transparent",
                 }}

@@ -2,9 +2,9 @@ import "./App.css";
 import { Container, Stack, Typography } from "@mui/material";
 import { useQuestionsStore } from "./store/questions";
 import { Logo } from "./components/Logo";
-import { Home } from "./components/Home";
-import { Results } from "./components/Results";
-import { Recent } from "./components/Recent";
+import { Home } from "./pages/Home";
+import { Results } from "./pages/Results";
+import { Recent } from "./pages/Recent";
 
 function App() {
   const questions = useQuestionsStore((state) => state.questions);
