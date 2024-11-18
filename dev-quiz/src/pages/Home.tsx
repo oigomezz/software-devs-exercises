@@ -11,7 +11,7 @@ export const Home = () => {
 
   const handleSubmit = (event: { preventDefault: () => void }) => {
     event.preventDefault();
-    fetchQuestions(search, 5);
+    fetchQuestions(search);
   };
 
   return (
@@ -31,7 +31,7 @@ export const Home = () => {
       <IconButton type="submit" sx={{ p: "10px" }} aria-label="search">
         <SearchIcon />
       </IconButton>
-      
+
       <IconButton
         onClick={() => {
           alert("Add question");
