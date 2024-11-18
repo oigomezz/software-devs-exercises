@@ -8,8 +8,10 @@ import {
 } from "@mui/material";
 import { useEffect, useState } from "react";
 import { type Question } from "../types";
+import { useQuestionsStore } from "../store/questions";
 
 export const Recent = () => {
+  const fetchQuestion = useQuestionsStore((state) => state.fetchQuestion);
   const [questions, setQuestions] = useState<Question[]>([]);
 
   useEffect(() => {
@@ -22,6 +24,10 @@ export const Recent = () => {
 
     fetching();
   }, []);
+
+  const handleClick = (question: Question) => {
+    fetchQuestion(question.id);
+  };
 
   return (
     <div style={{ marginTop: "16px" }}>
@@ -42,9 +48,7 @@ export const Recent = () => {
           {questions.map((question, index) => (
             <ListItem key={index} disablePadding divider>
               <ListItemButton
-                onClick={() => {
-                  alert(`Go to question ${JSON.stringify(question)}`);
-                }}
+                onClick={() => handleClick(question)}
                 sx={{
                   backgroundColor: "transparent",
                 }}

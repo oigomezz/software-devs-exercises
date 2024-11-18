@@ -4,6 +4,7 @@ import { type Question } from "../types";
 interface State {
   questions: Question[];
   currentQuestion: number;
+  fetchQuestion: (id: number) => Promise<void>;
   fetchQuestions: (search: string, limit?: number) => Promise<void>;
   goNextQuestion: () => void;
   goPreviousQuestion: () => void;
@@ -19,6 +20,12 @@ export const useQuestionsStore = create<State>((set, get) => {
     loading: false,
     questions: [],
     currentQuestion: 0,
+    fetchQuestion: async (id: number) => {
+      const res = await fetch(`${API_URL}/data.json`);
+      const json = await res.json();
+      const questions = json.filter((element: Question) => element.id === id);
+      set({ questions }, false);
+    },
     fetchQuestions: async (search: string, limit: number = 10) => {
       const res = await fetch(`${API_URL}/data.json`);
       const json = await res.json();
