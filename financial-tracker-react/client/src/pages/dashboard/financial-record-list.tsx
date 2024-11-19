@@ -26,7 +26,7 @@ const EditableCell: React.FC<EditableCellProps> = ({
     updateRecord(row.index, column.id, value);
   };
 
-  const stringValue = (value) => {
+  const stringValue = (value: { toString: () => string }) => {
     if (typeof value === "string") return value;
     else return value.toString();
   };
