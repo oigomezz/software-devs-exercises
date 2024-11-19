@@ -6,6 +6,8 @@ import axios from "axios";
 import { UserContextProvider } from "./context/UserContext.jsx";
 import Layout from "./components/Layout.jsx";
 
+import BookingPage from "./pages/BookingPage.jsx";
+import BookingsPage from "./pages/BookingsPage.jsx";
 import IndexPage from "./pages/IndexPage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import RegisterPage from "./pages/RegisterPage.jsx";
