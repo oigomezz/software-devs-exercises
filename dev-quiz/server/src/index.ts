@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
 
-import financialRecordRouter from "./routes/financial-records";
+import quizRouter from "./routes/quiz";
 
 dotenv.config();
 const app: Express = express();
@@ -21,7 +21,7 @@ if (mongoURI) {
     .catch((err) => console.error("Failed to Connect to MongoDB:", err));
 }
 
-app.use("/financial-records", financialRecordRouter);
+app.use("/quiz", quizRouter);
 
 app.listen(port, () => {
   console.log(`Server Running on Port ${port}`);
