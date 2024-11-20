@@ -3,9 +3,12 @@ import QuestionModel from "../schema/question";
 
 const router = express.Router();
 
-router.get("/getAllQuestions", async (req: Request, res: Response) => {
+router.get("/getLastQuestions/:limit", async (req: Request, res: Response) => {
   try {
-    const records = await QuestionModel.find({});
+    const limit = parseInt(req.params.limit);
+    const records = await QuestionModel.find()
+      .sort({ $natural: -1 })
+      .limit(limit);
     if (records.length === 0) return res.status(404).send("No records found");
     res.status(200).send(records);
   } catch (err) {
@@ -27,9 +30,9 @@ router.get("/getQuestions/:search", async (req: Request, res: Response) => {
 router.get("/getQuestionById/:id", async (req: Request, res: Response) => {
   try {
     const id = req.params.id;
-    const records = await QuestionModel.find({ id: id });
-    if (records.length === 0) return res.status(404).send("No records found");
-    res.status(200).send(records);
+    const record = await QuestionModel.findById(id);
+    if (!record) return res.status(404).send("No records found");
+    res.status(200).send(record);
   } catch (err) {
     res.status(500).send(err);
   }

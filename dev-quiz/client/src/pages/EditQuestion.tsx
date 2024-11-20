@@ -32,7 +32,7 @@ export const EditQuestion = () => {
   const handleSubmit = (event: { preventDefault: () => void }) => {
     event.preventDefault();
     const editQuestion: Question = {
-      id: question?.id,
+      _id: question?._id,
       question: description,
       answers: options,
       code: question?.code,

@@ -14,9 +14,7 @@ interface State {
   add: () => void;
 }
 
-const API_URL = import.meta.env.PROD
-  ? "https://midu-react-13.surge.sh/"
-  : "http://localhost:5173/";
+const API_URL = "http://localhost:3005";
 
 export const useQuestionsStore = create<State>((set, get) => {
   return {
@@ -24,19 +22,19 @@ export const useQuestionsStore = create<State>((set, get) => {
     questions: [],
     currentQuestion: 0,
     fetchQuestion: async (id: string) => {
-      const res = await fetch(`${API_URL}/data.json`);
-      const json = await res.json();
-      const questions = json.filter((element: Question) => element.id === id);
-      set({ questions }, false);
+      const url = `${API_URL}/quiz/getQuestionById/${id}`;
+      const response = await fetch(url);
+      if (response.ok) {
+        const questions = await response.json();
+        set({ questions }, false);
+      }
     },
-    fetchQuestions: async (search: string, limit: number = 10) => {
+    fetchQuestions: async (search: string) => {
       const res = await fetch(`${API_URL}/data.json`);
       const json = await res.json();
-      const questions = json
-        .filter((element: Question) =>
-          element.question.toLowerCase().includes(search)
-        )
-        .slice(0, limit);
+      const questions = json.filter((element: Question) =>
+        element.description.toLowerCase().includes(search)
+      );
       set({ questions }, false);
     },
 

@@ -1,16 +1,16 @@
-import mongoose from "mongoose";
+import mongoose, { ObjectId } from "mongoose";
 
 interface Question {
-  id: string;
+  _id: ObjectId;
   description: string;
-  code: string;
   answers: string[];
+  code: string;
   correctAnswer: number;
   category: string[];
 }
 
 const questionSchema = new mongoose.Schema<Question>({
-  id: { type: String, required: true },
+  _id: { type: mongoose.Types.ObjectId, required: true },
   description: { type: String, required: true },
   answers: { type: [String], required: true },
   code: { type: String, required: false },

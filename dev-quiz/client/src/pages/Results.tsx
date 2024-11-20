@@ -42,7 +42,7 @@ export const Results = () => {
       <div style={{ marginTop: "16px" }}>
         <Stack direction="row" alignItems="center" justifyContent="center">
           <Button onClick={() => reset()}>Volver al inicio</Button>
-          <IconButton onClick={() => handleEdit(questionInfo.id)}>
+          <IconButton onClick={() => handleEdit(questionInfo._id)}>
             <Edit />
           </IconButton>
         </Stack>
