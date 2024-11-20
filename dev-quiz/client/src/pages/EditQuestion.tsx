@@ -17,27 +17,28 @@ export const EditQuestion = () => {
   const [question, setQuestion] = useState<Question>();
 
   const reset = useQuestionsStore((state) => state.reset);
-  const current = useQuestionsStore((state) => state.currentQuestion);
+  const id = useQuestionsStore((state) => state.idQuestion);
   const fetchQuestion = useQuestionsStore((state) => state.fetchQuestion);
-  const questions = useQuestionsStore((state) => state.questions);
+
+  const fetchQ = async () => {
+    const question = await fetchQuestion(id);
+    setQuestion(question);
+    setDescription(question.description);
+    setOptions(question.answers);
+  };
 
   useEffect(() => {
-    fetchQuestion(current);
-    const question = questions[0];
-    setDescription(question.question);
-    setOptions(question.answers);
-    setQuestion(question);
+    fetchQ();
   }, []);
 
   const handleSubmit = (event: { preventDefault: () => void }) => {
     event.preventDefault();
     const editQuestion: Question = {
-      _id: question?._id,
-      question: description,
+      _id: id,
+      description: description,
       answers: options,
       code: question?.code,
       correctAnswer: question?.correctAnswer,
-      isCorrectUserAnswer: question?.isCorrectUserAnswer,
     };
     alert({ editQuestion });
   };

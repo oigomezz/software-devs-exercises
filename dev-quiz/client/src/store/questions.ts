@@ -3,14 +3,15 @@ import { type Question } from "../types";
 
 interface State {
   questions: Question[];
+  idQuestion: string;
   currentQuestion: number;
-  fetchQuestion: (id: string) => Promise<void>;
+  fetchQuestion: (id: string) => Promise<Question>;
   fetchQuestions: (search: string, limit?: number) => Promise<void>;
   goNextQuestion: () => void;
   goPreviousQuestion: () => void;
   reset: () => void;
   editQuestion: boolean;
-  edit: () => void;
+  edit: (id: string) => void;
   add: () => void;
 }
 
@@ -20,15 +21,14 @@ export const useQuestionsStore = create<State>((set, get) => {
   return {
     editQuestion: false,
     questions: [],
+    idQuestion: "",
     currentQuestion: 0,
     fetchQuestion: async (id: string) => {
       const url = `${API_URL}/quiz/getQuestionById/${id}`;
       const response = await fetch(url);
-      if (response.ok) {
-        const questions = await response.json();
-        console.log([questions]);
-        set({ questions }, false);
-      }
+      if (!response.ok) return null;
+      const question = await response.json();
+      return question;
     },
     fetchQuestions: async (search: string) => {
       const res = await fetch(`${API_URL}/quiz/getQuestions/${search}`);
@@ -61,8 +61,8 @@ export const useQuestionsStore = create<State>((set, get) => {
       set({ questions: [], editQuestion: false }, false);
     },
 
-    edit: () => {
-      set({ editQuestion: true }, false);
+    edit: (id: string) => {
+      set({ idQuestion: id, editQuestion: true }, false);
     },
 
     add: () => {

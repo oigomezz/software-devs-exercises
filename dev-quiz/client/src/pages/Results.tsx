@@ -8,16 +8,12 @@ export const Results = () => {
   const edit = useQuestionsStore((state) => state.edit);
   const reset = useQuestionsStore((state) => state.reset);
   const questions = useQuestionsStore((state) => state.questions);
-  const currentQuestion = useQuestionsStore((state) => state.currentQuestion);
+  const current = useQuestionsStore((state) => state.currentQuestion);
   const goNext = useQuestionsStore((state) => state.goNextQuestion);
   const goPrev = useQuestionsStore((state) => state.goPreviousQuestion);
 
-  const questionInfo = questions[currentQuestion];
-
-  const handleEdit = (id: string) => {
-    console.log(id);
-    edit();
-  };
+  const questionInfo = questions[current];
+  const handleEdit = (id: string) => edit(id);
 
   return (
     <div style={{ marginTop: "16px" }}>
@@ -27,13 +23,13 @@ export const Results = () => {
         alignItems="center"
         justifyContent="center"
       >
-        <IconButton onClick={goPrev} disabled={currentQuestion === 0}>
+        <IconButton onClick={goPrev} disabled={current === 0}>
           <ArrowBackIosNew />
         </IconButton>
-        {currentQuestion + 1} / {questions.length}
+        {current + 1} / {questions.length}
         <IconButton
           onClick={goNext}
-          disabled={currentQuestion >= questions.length - 1}
+          disabled={current >= questions.length - 1}
         >
           <ArrowForwardIos />
         </IconButton>

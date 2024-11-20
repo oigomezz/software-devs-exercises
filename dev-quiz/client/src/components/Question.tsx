@@ -29,7 +29,7 @@ export const Question = ({ info }: { info: QuestionType }) => {
         maxWidth: "100%",
       }}
     >
-      <Typography variant="h5">{info.question}</Typography>
+      <Typography variant="h5">{info.description}</Typography>
 
       {info.code && (
         <SyntaxHighlighter language="javascript" style={gradientDark}>

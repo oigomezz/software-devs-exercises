@@ -1,6 +1,7 @@
 export interface Question {
   _id: string;
   description: string;
-  code?: string;
   answers: string[];
+  code?: string;
+  correctAnswer?: number;
 }
