@@ -10,7 +10,7 @@ interface State {
   goPreviousQuestion: () => void;
   reset: () => void;
   editQuestion: boolean;
-  edit: (id: number) => void;
+  edit: () => void;
   add: () => void;
 }
 
@@ -26,11 +26,12 @@ export const useQuestionsStore = create<State>((set, get) => {
       const response = await fetch(url);
       if (response.ok) {
         const questions = await response.json();
+        console.log([questions]);
         set({ questions }, false);
       }
     },
     fetchQuestions: async (search: string) => {
-      const res = await fetch(`${API_URL}/data.json`);
+      const res = await fetch(`${API_URL}/quiz/getQuestions/${search}`);
       const json = await res.json();
       const questions = json.filter((element: Question) =>
         element.description.toLowerCase().includes(search)
@@ -60,8 +61,8 @@ export const useQuestionsStore = create<State>((set, get) => {
       set({ questions: [], editQuestion: false }, false);
     },
 
-    edit: (id: number) => {
-      set({ currentQuestion: id, editQuestion: true }, false);
+    edit: () => {
+      set({ editQuestion: true }, false);
     },
 
     add: () => {

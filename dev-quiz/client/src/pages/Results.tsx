@@ -14,8 +14,9 @@ export const Results = () => {
 
   const questionInfo = questions[currentQuestion];
 
-  const handleEdit = (id: number) => {
-    edit(id);
+  const handleEdit = (id: string) => {
+    console.log(id);
+    edit();
   };
 
   return (

@@ -3,5 +3,4 @@ export interface Question {
   description: string;
   code?: string;
   answers: string[];
-  correctAnswer?: number;
 }

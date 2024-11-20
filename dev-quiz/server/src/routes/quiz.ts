@@ -3,6 +3,16 @@ import QuestionModel from "../schema/question";
 
 const router = express.Router();
 
+router.get("/getQuestions/", async (req: Request, res: Response) => {
+  try {
+    const records = await QuestionModel.find({});
+    if (records.length === 0) return res.status(404).send("No records found");
+    res.status(200).send(records);
+  } catch (err) {
+    res.status(500).send(err);
+  }
+});
+
 router.get("/getLastQuestions/:limit", async (req: Request, res: Response) => {
   try {
     const limit = parseInt(req.params.limit);
@@ -19,7 +29,10 @@ router.get("/getLastQuestions/:limit", async (req: Request, res: Response) => {
 router.get("/getQuestions/:search", async (req: Request, res: Response) => {
   try {
     const search = req.params.search;
-    const records = await QuestionModel.find({ question: search });
+    const regex = new RegExp(search, "i");
+    const records = await QuestionModel.find({
+      description: { $regex: regex },
+    });
     if (records.length === 0) return res.status(404).send("No records found");
     res.status(200).send(records);
   } catch (err) {

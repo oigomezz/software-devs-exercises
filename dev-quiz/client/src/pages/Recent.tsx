@@ -32,7 +32,6 @@ export const Recent = () => {
   }, []);
 
   const handleClick = (question: Question) => {
-    console.log(question._id);
     fetchQuestion(question._id);
   };
 
@@ -53,7 +52,7 @@ export const Recent = () => {
             maxWidth: "100%",
           }}
         >
-          <Typography variant="h5" sx={{ textAlign: "center", p:1 }}>
+          <Typography variant="h5" sx={{ textAlign: "center", p: 1 }}>
             Recent
           </Typography>
           <List sx={{ bgcolor: "#333" }} disablePadding>

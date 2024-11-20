@@ -9,7 +9,7 @@ import { EditQuestion } from "./pages/EditQuestion";
 
 function App() {
   const date = new Date();
-  
+
   const questions = useQuestionsStore((state) => state.questions);
   const edit = useQuestionsStore((state) => state.editQuestion);
 
