@@ -13,17 +13,21 @@ import { Question } from "../types";
 
 export const EditQuestion = () => {
   const [description, setDescription] = useState("");
+  const [code, setCode] = useState("");
   const [options, setOptions] = useState<string[]>([]);
   const [question, setQuestion] = useState<Question>();
 
   const reset = useQuestionsStore((state) => state.reset);
   const id = useQuestionsStore((state) => state.idQuestion);
+  const questions = useQuestionsStore((state) => state.questions);
   const fetchQuestion = useQuestionsStore((state) => state.fetchQuestion);
 
   const fetchQ = async () => {
-    const question = await fetchQuestion(id);
+    fetchQuestion(id);
+    const question = questions[0];
     setQuestion(question);
     setDescription(question.description);
+    setCode(question.code ?? "");
     setOptions(question.answers);
   };
 
@@ -37,10 +41,11 @@ export const EditQuestion = () => {
       _id: id,
       description: description,
       answers: options,
-      code: question?.code,
-      correctAnswer: question?.correctAnswer,
+      code,
+      correctAnswer: question?.correctAnswer ?? -1,
+      categories: question?.categories ?? [],
     };
-    alert({ editQuestion });
+    alert(JSON.stringify(editQuestion));
   };
 
   const handleInput = (text: string, index: number) => {
@@ -53,15 +58,45 @@ export const EditQuestion = () => {
     <>
       <h1>Editar Pregunta</h1>
       <form autoComplete="off" style={{ marginTop: "16px" }}>
-        <TextField
-          id="outlined-multiline-static"
-          label="Descripcion"
-          multiline
-          fullWidth
-          rows={3}
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
-        />
+        <Card
+          variant="outlined"
+          sx={{
+            bgcolor: "#222",
+            p: 2,
+            textAlign: "left",
+            maxWidth: "100%",
+          }}
+        >
+          <TextField
+            id="outlined-multiline-static"
+            label="Descripcion"
+            multiline
+            fullWidth
+            rows={2}
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+          />
+        </Card>
+
+        <Card
+          variant="outlined"
+          sx={{
+            bgcolor: "#222",
+            p: 2,
+            textAlign: "left",
+            maxWidth: "100%",
+          }}
+        >
+          <TextField
+            id="outlined-multiline-static"
+            label="Codigo"
+            multiline
+            fullWidth
+            rows={2}
+            value={code}
+            onChange={(e) => setCode(e.target.value)}
+          />
+        </Card>
 
         <Card
           variant="outlined"

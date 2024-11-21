@@ -6,7 +6,7 @@ interface Question {
   answers: string[];
   code: string;
   correctAnswer: number;
-  category: string[];
+  categories: string[];
 }
 
 const questionSchema = new mongoose.Schema<Question>({
@@ -15,7 +15,7 @@ const questionSchema = new mongoose.Schema<Question>({
   answers: { type: [String], required: true },
   code: { type: String, required: false },
   correctAnswer: { type: Number, required: false },
-  category: { type: [String], required: false },
+  categories: { type: [String], required: false },
 });
 
 const QuestionModel = mongoose.model<Question>("Question", questionSchema);

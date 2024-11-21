@@ -5,7 +5,7 @@ interface State {
   questions: Question[];
   idQuestion: string;
   currentQuestion: number;
-  fetchQuestion: (id: string) => Promise<Question>;
+  fetchQuestion: (id: string) => Promise<void>;
   fetchQuestions: (search: string, limit?: number) => Promise<void>;
   goNextQuestion: () => void;
   goPreviousQuestion: () => void;
@@ -26,16 +26,16 @@ export const useQuestionsStore = create<State>((set, get) => {
     fetchQuestion: async (id: string) => {
       const url = `${API_URL}/quiz/getQuestionById/${id}`;
       const response = await fetch(url);
-      if (!response.ok) return null;
+      if (!response.ok) return;
       const question = await response.json();
-      return question;
+      set({ questions: [question] }, false);
     },
+    
     fetchQuestions: async (search: string) => {
-      const res = await fetch(`${API_URL}/quiz/getQuestions/${search}`);
-      const json = await res.json();
-      const questions = json.filter((element: Question) =>
-        element.description.toLowerCase().includes(search)
-      );
+      const url = `${API_URL}/quiz/getQuestions/${search}`;
+      const response = await fetch(url);
+      if (!response.ok) return;
+      const questions = await response.json();
       set({ questions }, false);
     },
 

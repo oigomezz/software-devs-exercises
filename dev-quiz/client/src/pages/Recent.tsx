@@ -13,7 +13,8 @@ import { useQuestionsStore } from "../store/questions";
 export const Recent = () => {
   const [loading, setLoading] = useState(false);
   const [questions, setQuestions] = useState<Question[]>([]);
-  const edit = useQuestionsStore((state) => state.edit);
+  const fetchQuestion = useQuestionsStore((state) => state.fetchQuestion);
+
   const API_URL = "http://localhost:3005";
 
   const fetchRecords = async () => {
@@ -32,7 +33,7 @@ export const Recent = () => {
   }, []);
 
   const handleClick = (question: Question) => {
-    edit(question._id);
+    fetchQuestion(question._id);
   };
 
   return (
