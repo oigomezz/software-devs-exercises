@@ -6,11 +6,13 @@ import { Home } from "./pages/Home";
 import { Results } from "./pages/Results";
 import { Recent } from "./pages/Recent";
 import { EditQuestion } from "./pages/EditQuestion";
+import { AddQuestion } from "./pages/AddQuestion";
 
 function App() {
   const date = new Date();
 
   const questions = useQuestionsStore((state) => state.questions);
+  const id = useQuestionsStore((state) => state.idQuestion);
   const edit = useQuestionsStore((state) => state.editQuestion);
 
   return (
@@ -33,7 +35,8 @@ function App() {
           {questions.length === 0 && !edit && <Home />}
           {questions.length === 0 && !edit && <Recent />}
           {questions.length > 0 && !edit && <Results />}
-          {edit && <EditQuestion />}
+          {edit && id && <EditQuestion />}
+          {edit && !id && <AddQuestion />}
         </Container>
       </main>
       <footer>{date.getFullYear()}</footer>
