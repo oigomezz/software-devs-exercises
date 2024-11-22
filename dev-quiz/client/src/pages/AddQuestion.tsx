@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import { ChangeEvent, useState } from "react";
 import AddCircleOutlineOutlinedIcon from "@mui/icons-material/AddCircleOutlineOutlined";
+import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
 import { useQuestionsStore } from "../store/questions";
 
 export const AddQuestion = () => {
@@ -32,7 +33,7 @@ export const AddQuestion = () => {
     alert(JSON.stringify(addQuestion));
   };
 
-  const handleInput = (
+  const handleOption = (
     event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
     index: number
   ) => {
@@ -42,14 +43,40 @@ export const AddQuestion = () => {
     setOptions(newOptions);
   };
 
+  const handleCategory = (
+    event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+    index: number
+  ) => {
+    event.preventDefault();
+    const newCategories = [...categories];
+    newCategories[index] = event.target.value;
+    setCategories(newCategories);
+  };
+
   const addOption = () => {
     setCorrectAnswer(options.length);
     const newOptions = [...options, ""];
     setOptions(newOptions);
   };
 
+  const removeOption = (index: number) => {
+    const newOptions = [
+      ...options.slice(0, index),
+      ...options.slice(index + 1),
+    ];
+    setOptions(newOptions);
+  };
+
   const addCategory = () => {
     const newCategories = [...categories, ""];
+    setCategories(newCategories);
+  };
+
+  const removeCategory = (index: number) => {
+    const newCategories = [
+      ...categories.slice(0, index),
+      ...categories.slice(index + 1),
+    ];
     setCategories(newCategories);
   };
 
@@ -131,9 +158,16 @@ export const AddQuestion = () => {
                   }}
                   value={option}
                   onChange={(e) => {
-                    handleInput(e, index);
+                    handleOption(e, index);
                   }}
                 />
+                <IconButton
+                  onClick={() => removeOption(index)}
+                  sx={{ p: 1, alignItems: "center", maxWidth: "100%" }}
+                  aria-label="search"
+                >
+                  <RemoveCircleOutlineIcon />
+                </IconButton>
               </ListItem>
             ))}
           </List>
@@ -175,9 +209,16 @@ export const AddQuestion = () => {
                   }}
                   value={category}
                   onChange={(e) => {
-                    handleInput(e, index);
+                    handleCategory(e, index);
                   }}
                 />
+                <IconButton
+                  onClick={() => removeCategory(index)}
+                  sx={{ p: 1, alignItems: "center", maxWidth: "100%" }}
+                  aria-label="search"
+                >
+                  <RemoveCircleOutlineIcon />
+                </IconButton>
               </ListItem>
             ))}
           </List>
