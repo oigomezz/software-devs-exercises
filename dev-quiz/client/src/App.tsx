@@ -35,8 +35,8 @@ function App() {
           {questions.length === 0 && !edit && <Home />}
           {questions.length === 0 && !edit && <Recent />}
           {questions.length > 0 && !edit && <Results />}
-          {edit && id && <EditQuestion />}
           {edit && !id && <AddQuestion />}
+          {edit && id && <EditQuestion />}
         </Container>
       </main>
       <footer>{date.getFullYear()}</footer>
