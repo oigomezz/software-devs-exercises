@@ -54,7 +54,7 @@ export const Recent = () => {
           }}
         >
           <Typography variant="h5" sx={{ textAlign: "center", p: 1 }}>
-            Recent
+            Agregadas Recentecientemente
           </Typography>
           <List sx={{ bgcolor: "#333" }} disablePadding>
             {questions.map((question, index) => (
