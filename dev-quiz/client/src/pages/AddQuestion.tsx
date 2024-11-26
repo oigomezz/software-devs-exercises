@@ -1,7 +1,8 @@
-import { Button, Card, TextField } from "@mui/material";
+import { Button } from "@mui/material";
 import { useState } from "react";
 import { useQuestionsStore } from "../store/questions";
 import { DynamicList } from "../components/DynamicList";
+import { TextArea } from "../components/TextArea";
 
 export const AddQuestion = () => {
   const [description, setDescription] = useState("");
@@ -15,7 +16,7 @@ export const AddQuestion = () => {
   const handleSubmit = (event: { preventDefault: () => void }) => {
     event.preventDefault();
     const addQuestion = {
-      description: description,
+      description,
       answers: options,
       code,
       correctAnswer,
@@ -28,43 +29,13 @@ export const AddQuestion = () => {
     <>
       <h1>Agregar Pregunta</h1>
       <form autoComplete="off" style={{ marginTop: "16px" }}>
-        <Card
-          variant="outlined"
-          sx={{
-            bgcolor: "#222",
-            p: 2,
-            textAlign: "left",
-            maxWidth: "100%",
-          }}
-        >
-          <TextField
-            label="Descripcion"
-            multiline
-            fullWidth
-            rows={2}
-            value={description}
-            onChange={(e) => setDescription(e.target.value)}
-          />
-        </Card>
+        <TextArea
+          label={"Descripcion"}
+          value={description}
+          onChange={setDescription}
+        />
 
-        <Card
-          variant="outlined"
-          sx={{
-            bgcolor: "#222",
-            p: 2,
-            textAlign: "left",
-            maxWidth: "100%",
-          }}
-        >
-          <TextField
-            label="Codigo"
-            multiline
-            fullWidth
-            rows={2}
-            value={code}
-            onChange={(e) => setCode(e.target.value)}
-          />
-        </Card>
+        <TextArea label={"Codigo"} value={code} onChange={setCode} />
 
         <DynamicList
           title={"Opciones"}
