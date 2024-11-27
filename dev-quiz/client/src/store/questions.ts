@@ -13,6 +13,9 @@ interface State {
   getLastQuestions: (limit: number) => Promise<void>;
   getQuestions: (search: string) => Promise<void>;
   getQuestionById: (id: string) => Promise<void>;
+  addQuestion: (question: Question) => Promise<void>;
+  updateQuestion: (id: string, newQuestion: Question) => Promise<void>;
+  deleteQuestion: (id: string) => Promise<void>;
   goNextQuestion: () => void;
   goPreviousQuestion: () => void;
   goToPage: (page: "home" | "results" | "add" | "edit") => void;
@@ -22,7 +25,7 @@ interface State {
   add: () => void;
 }
 
-const API_URL = "http://localhost:3005";
+const API = "http://localhost:3005";
 
 export const useQuestionsStore = create<State>((set, get) => {
   return {
@@ -34,7 +37,7 @@ export const useQuestionsStore = create<State>((set, get) => {
     currentQuestion: 0,
     getQuestions: async (search: string) => {
       set({ loading: true }, false);
-      const url = `${API_URL}/quiz/getQuestions/${search}`;
+      const url = `${API}/quiz/getQuestions/${search}`;
       const response = await fetch(url);
       if (!response.ok) return;
       const questions = await response.json();
@@ -43,7 +46,7 @@ export const useQuestionsStore = create<State>((set, get) => {
 
     getQuestionById: async (id: string) => {
       set({ loading: true }, false);
-      const url = `${API_URL}/quiz/getQuestionById/${id}`;
+      const url = `${API}/quiz/getQuestionById/${id}`;
       const response = await fetch(url);
       if (!response.ok) return;
       const question = await response.json();
@@ -52,11 +55,59 @@ export const useQuestionsStore = create<State>((set, get) => {
 
     getLastQuestions: async (limit: number) => {
       set({ loading: true }, false);
-      const url = `${API_URL}/quiz/getLastQuestions/${limit}`;
+      const url = `${API}/quiz/getLastQuestions/${limit}`;
       const response = await fetch(url);
       if (!response.ok) return;
       const questions = await response.json();
       set({ loading: false, questions }, false);
+    },
+
+    addQuestion: async (question: Question) => {
+      set({ loading: true }, false);
+      const url = `${API}/quiz/`;
+      const response = await fetch(url, {
+        method: "POST",
+        body: JSON.stringify(question),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      try {
+        if (response.ok) set({ loading: false }, false);
+      } catch (err) {
+        console.error(err);
+      }
+    },
+
+    updateQuestion: async (id: string, newQuestion: Question) => {
+      set({ loading: true }, false);
+      const url = `${API}/quiz/${id}`;
+      const response = await fetch(url, {
+        method: "PUT",
+        body: JSON.stringify(newQuestion),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      try {
+        if (response.ok) set({ loading: false }, false);
+      } catch (err) {
+        console.error(err);
+      }
+    },
+
+    deleteQuestion: async (id: string) => {
+      set({ loading: true }, false);
+      const url = `${API}/quiz/${id}`;
+      const response = await fetch(url, { method: "DELETE" });
+
+      try {
+        if (response.ok) set({ loading: false }, false);
+      } catch (err) {
+        console.error(err);
+      }
     },
 
     goNextQuestion: () => {
