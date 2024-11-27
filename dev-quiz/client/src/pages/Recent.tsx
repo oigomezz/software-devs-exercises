@@ -6,34 +6,19 @@ import {
   ListItemText,
   Typography,
 } from "@mui/material";
-import { useEffect, useState } from "react";
 import { type Question } from "../types";
 import { useQuestionsStore } from "../store/questions";
 
 export const Recent = () => {
-  const [loading, setLoading] = useState(false);
-  const [questions, setQuestions] = useState<Question[]>([]);
-  const fetchQuestion = useQuestionsStore((state) => state.fetchQuestion);
-
-  const API_URL = "http://localhost:3005";
-
-  const fetchRecords = async () => {
-    setLoading(true);
-    const url = `${API_URL}/quiz/getLastQuestions/${5}`;
-    const response = await fetch(url);
-    if (response.ok) {
-      const res = await response.json();
-      setQuestions(res);
-      setLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    fetchRecords();
-  }, []);
+  const title = useQuestionsStore((state) => state.title);
+  const loading = useQuestionsStore((state) => state.loading);
+  const questions = useQuestionsStore((state) => state.questions);
+  const fetchQuestion = useQuestionsStore((state) => state.getQuestionById);
+  const goToPage = useQuestionsStore((state) => state.goToPage);
 
   const handleClick = (question: Question) => {
     fetchQuestion(question._id);
+    goToPage("results");
   };
 
   return (
@@ -54,7 +39,7 @@ export const Recent = () => {
           }}
         >
           <Typography variant="h5" sx={{ textAlign: "center", p: 1 }}>
-            Agregadas Recentecientemente
+            {title}
           </Typography>
           <List sx={{ bgcolor: "#333" }} disablePadding>
             {questions.map((question, index) => (

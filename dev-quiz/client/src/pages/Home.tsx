@@ -1,4 +1,5 @@
-import { useState } from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
+import { useEffect, useState } from "react";
 import { useQuestionsStore } from "../store/questions";
 
 import { IconButton, TextField } from "@mui/material";
@@ -7,11 +8,19 @@ import SearchIcon from "@mui/icons-material/Search";
 
 export const Home = () => {
   const add = useQuestionsStore((state) => state.add);
-  const fetchQuestions = useQuestionsStore((state) => state.fetchQuestions);
+  const setTitle = useQuestionsStore((state) => state.setTitle);
+  const getLastQuestions = useQuestionsStore((state) => state.getLastQuestions);
+  const fetchQuestions = useQuestionsStore((state) => state.getQuestions);
   const [search, setSearch] = useState("");
+
+  useEffect(() => {
+    getLastQuestions(5);
+    setTitle("Recientes")
+  }, []);
 
   const handleSubmit = (event: { preventDefault: () => void }) => {
     event.preventDefault();
+    setTitle(`Resultados: ${search}`);
     fetchQuestions(search);
   };
 

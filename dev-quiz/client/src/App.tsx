@@ -1,6 +1,6 @@
 import "./App.css";
-import { useQuestionsStore } from "./store/questions";
 import { Container, Stack, Typography } from "@mui/material";
+import { useQuestionsStore } from "./store/questions";
 import { Logo } from "./components/Logo";
 import { Home } from "./pages/Home";
 import { Results } from "./pages/Results";
@@ -10,10 +10,7 @@ import { AddQuestion } from "./pages/AddQuestion";
 
 function App() {
   const date = new Date();
-
-  const questions = useQuestionsStore((state) => state.questions);
-  const id = useQuestionsStore((state) => state.idQuestion);
-  const edit = useQuestionsStore((state) => state.editQuestion);
+  const page = useQuestionsStore((state) => state.page);
 
   return (
     <div className="app">
@@ -32,11 +29,11 @@ function App() {
       </header>
       <main>
         <Container maxWidth="md">
-          {questions.length === 0 && !edit && <Home />}
-          {questions.length === 0 && !edit && <Recent />}
-          {questions.length > 0 && !edit && <Results />}
-          {edit && !id && <AddQuestion />}
-          {edit && id && <EditQuestion />}
+          {page === "home" && <Home />}
+          {page === "home" && <Recent />}
+          {page === "results" && <Results />}
+          {page === "add" && <AddQuestion />}
+          {page === "edit" && <EditQuestion />}
         </Container>
       </main>
       <footer>{date.getFullYear()}</footer>

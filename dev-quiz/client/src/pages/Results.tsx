@@ -5,12 +5,12 @@ import { useQuestionsStore } from "../store/questions";
 import { Question } from "../components/Question";
 
 export const Results = () => {
-  const edit = useQuestionsStore((state) => state.edit);
-  const reset = useQuestionsStore((state) => state.reset);
-  const questions = useQuestionsStore((state) => state.questions);
-  const current = useQuestionsStore((state) => state.currentQuestion);
-  const goNext = useQuestionsStore((state) => state.goNextQuestion);
   const goPrev = useQuestionsStore((state) => state.goPreviousQuestion);
+  const goNext = useQuestionsStore((state) => state.goNextQuestion);
+  const current = useQuestionsStore((state) => state.currentQuestion);
+  const questions = useQuestionsStore((state) => state.questions);
+  const reset = useQuestionsStore((state) => state.reset);
+  const edit = useQuestionsStore((state) => state.edit);
 
   const questionInfo = questions[current];
   const handleEdit = (id: string) => edit(id);
@@ -27,10 +27,7 @@ export const Results = () => {
           <ArrowBackIosNew />
         </IconButton>
         {current + 1} / {questions.length}
-        <IconButton
-          onClick={goNext}
-          disabled={current >= questions.length - 1}
-        >
+        <IconButton onClick={goNext} disabled={current >= questions.length - 1}>
           <ArrowForwardIos />
         </IconButton>
       </Stack>

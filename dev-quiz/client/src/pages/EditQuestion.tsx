@@ -20,7 +20,7 @@ export const EditQuestion = () => {
   const reset = useQuestionsStore((state) => state.reset);
   const id = useQuestionsStore((state) => state.idQuestion);
   const questions = useQuestionsStore((state) => state.questions);
-  const fetchQuestion = useQuestionsStore((state) => state.fetchQuestion);
+  const fetchQuestion = useQuestionsStore((state) => state.getQuestionById);
 
   const fetchQ = async () => {
     fetchQuestion(id);
