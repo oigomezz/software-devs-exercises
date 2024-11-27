@@ -1,7 +1,6 @@
-import mongoose, { ObjectId } from "mongoose";
+import mongoose from "mongoose";
 
 interface Question {
-  _id: ObjectId;
   description: string;
   answers: string[];
   code: string;
@@ -10,7 +9,6 @@ interface Question {
 }
 
 const questionSchema = new mongoose.Schema<Question>({
-  _id: { type: mongoose.Types.ObjectId, required: true },
   description: { type: String, required: true },
   answers: { type: [String], required: true },
   code: { type: String, required: false },

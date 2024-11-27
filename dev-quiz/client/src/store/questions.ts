@@ -74,7 +74,10 @@ export const useQuestionsStore = create<State>((set, get) => {
       });
 
       try {
-        if (response.ok) set({ loading: false }, false);
+        if (response.ok) {
+          alert("Agragado con exito");
+          set({ loading: false, page: "home" }, false);
+        }
       } catch (err) {
         console.error(err);
       }

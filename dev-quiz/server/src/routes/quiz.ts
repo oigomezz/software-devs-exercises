@@ -58,6 +58,7 @@ router.post("/", async (req: Request, res: Response) => {
     const savedRecord = await newRecord.save();
     res.status(200).send(savedRecord);
   } catch (err) {
+    console.error(err);
     res.status(500).send(err);
   }
 });

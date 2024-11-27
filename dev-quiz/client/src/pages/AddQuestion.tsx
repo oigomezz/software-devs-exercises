@@ -12,17 +12,18 @@ export const AddQuestion = () => {
   const [categories, setCategories] = useState<string[]>([]);
 
   const reset = useQuestionsStore((state) => state.reset);
+  const addQuestion = useQuestionsStore((state) => state.addQuestion);
 
   const handleSubmit = (event: { preventDefault: () => void }) => {
     event.preventDefault();
-    const addQuestion = {
+    const newQuestion = {
       description,
       answers: options,
       code,
       correctAnswer,
       categories,
     };
-    alert(JSON.stringify(addQuestion));
+    addQuestion(newQuestion);
   };
 
   return (
