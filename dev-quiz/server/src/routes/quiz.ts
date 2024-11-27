@@ -9,6 +9,7 @@ router.get("/getQuestions/", async (req: Request, res: Response) => {
     if (records.length === 0) return res.status(404).send("No records found");
     res.status(200).send(records);
   } catch (err) {
+    console.error(err);
     res.status(500).send(err);
   }
 });
@@ -22,6 +23,7 @@ router.get("/getLastQuestions/:limit", async (req: Request, res: Response) => {
     if (records.length === 0) return res.status(404).send("No records found");
     res.status(200).send(records);
   } catch (err) {
+    console.error(err);
     res.status(500).send(err);
   }
 });
@@ -36,6 +38,7 @@ router.get("/getQuestions/:search", async (req: Request, res: Response) => {
     if (records.length === 0) return res.status(404).send("No records found");
     res.status(200).send(records);
   } catch (err) {
+    console.error(err);
     res.status(500).send(err);
   }
 });
@@ -47,6 +50,7 @@ router.get("/getQuestionById/:id", async (req: Request, res: Response) => {
     if (!record) return res.status(404).send("No records found");
     res.status(200).send(record);
   } catch (err) {
+    console.error(err);
     res.status(500).send(err);
   }
 });
@@ -73,6 +77,7 @@ router.put("/:id", async (req: Request, res: Response) => {
     if (!record) return res.status(404).send();
     res.status(200).send(record);
   } catch (err) {
+    console.error(err);
     res.status(500).send(err);
   }
 });
@@ -84,6 +89,7 @@ router.delete("/:id", async (req: Request, res: Response) => {
     if (!record) return res.status(404).send();
     res.status(200).send(record);
   } catch (err) {
+    console.error(err);
     res.status(500).send(err);
   }
 });
