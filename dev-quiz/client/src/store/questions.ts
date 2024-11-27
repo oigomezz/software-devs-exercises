@@ -21,7 +21,7 @@ interface State {
   goToPage: (page: "home" | "results" | "add" | "edit") => void;
   setTitle: (title: string) => void;
   reset: () => void;
-  edit: (id: string) => void;
+  edit: (id: string | undefined) => void;
   add: () => void;
 }
 
@@ -147,7 +147,7 @@ export const useQuestionsStore = create<State>((set, get) => {
       );
     },
 
-    edit: (id: string) => {
+    edit: (id: string | undefined) => {
       set(
         {
           page: "edit",

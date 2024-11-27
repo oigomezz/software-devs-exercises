@@ -13,7 +13,7 @@ export const Results = () => {
   const edit = useQuestionsStore((state) => state.edit);
 
   const questionInfo = questions[current];
-  const handleEdit = (id: string) => edit(id);
+  const handleEdit = (id: string | undefined) => edit(id);
 
   return (
     <div style={{ marginTop: "16px" }}>
