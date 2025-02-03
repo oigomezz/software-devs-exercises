@@ -908,4 +908,380 @@
     "Desarrollo e Ingeniería"
   ],
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a11deb945d9ae36a5ca2ea"
+  },
+  "description": "Tu sistema tiene las siguientes variables:a = 10, b = 20 y c = a - b.\n¿Cuánto vale c?",
+  "answers": [
+    "-10"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a11e15945d9ae36a5ca2ed"
+  },
+  "description": "¿Para qué sirve la función alert en JavaScript?",
+  "answers": [
+    "Nos permite mostrar mensajes a usuarios de forma invasiva."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a11e38945d9ae36a5ca2f0"
+  },
+  "description": "Vas a crear una variable y asignarle un valor. ¿Dónde se almacena este contenido?",
+  "answers": [
+    "Los archivos se guardan en el disco duro cuando escribimos el código. Las variables se guardan en memoria RAM cuando ejecutamos el código."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a11e5c945d9ae36a5ca2f3"
+  },
+  "description": "¿Cómo se invoca una función?",
+  "answers": [
+    "funcion()"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a11e7c945d9ae36a5ca2f6"
+  },
+  "description": "¿Qué símbolo nos permite diferenciar texto de variables en la programación?",
+  "answers": [
+    "Comillas"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a11e9e945d9ae36a5ca2f9"
+  },
+  "description": "¿Cuál es la principal etiqueta en HTML donde puedes guardar las demás etiquetas de tu sitio web?",
+  "answers": [
+    "html"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a11ec0945d9ae36a5ca2fc"
+  },
+  "description": "¿En qué orden carga el HTML de nuestro sitio web?",
+  "answers": [
+    "De arriba hacia abajo."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a11ee2945d9ae36a5ca2ff"
+  },
+  "description": "¿Qué etiqueta en HTML nos permite escribir código JavaScript?",
+  "answers": [
+    "script"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a11f01945d9ae36a5ca302"
+  },
+  "description": "¿Qué tipo de selector en CSS es el siguiente: #titulo?",
+  "answers": [
+    "id"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a11f22945d9ae36a5ca305"
+  },
+  "description": "¿Qué propiedad y valor de CSS debemos usar si queremos crear dos columnas de 100px cada una usando CSS Grid?",
+  "answers": [
+    "grid-template-columns: 100px 100px;"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a11f3e945d9ae36a5ca308"
+  },
+  "description": "¿Qué es :hover en CSS?",
+  "answers": [
+    "Una pseudo-clase."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a11f5a945d9ae36a5ca30b"
+  },
+  "description": "¿Cómo detectamos en CSS que un usuario hace click en un input de tipo radio o checkbox?",
+  "answers": [
+    "input:checked"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a11f79945d9ae36a5ca30e"
+  },
+  "description": "¿Qué es un objeto?",
+  "answers": [
+    "Una abstracción en código que nos permite crear representaciones de elementos del mundo que conocemos (por ejemplo, carro, computadora, estudiante, entre otros)."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a11f97945d9ae36a5ca311"
+  },
+  "description": "¿A qué nos referimos cuando decimos “Don't repeat yourself”?",
+  "answers": [
+    "A un principio del desarrollo de software que nos recomienda evitar repetir nuestro código cuando estamos trabajando una solución. Por ejemplo, al momento de crear funciones, lo ideal sería que se puedan reutilizar a evitar copiar y pegar la misma función muchas veces."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a11fbf945d9ae36a5ca314"
+  },
+  "description": "¿Cuál es la propiedad que nos permite agregar HTML desde JavaScript?",
+  "answers": [
+    "innerHTML"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a11fe3945d9ae36a5ca317"
+  },
+  "description": "¿Para obtener el contexto del canvas usamos getContext()?",
+  "answers": [
+    "Verdadero",
+    "Falso"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12004945d9ae36a5ca31a"
+  },
+  "description": "¿Cómo logramos que una función se ejecute cada cierto tiempo?",
+  "answers": [
+    "setInterval()"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12025945d9ae36a5ca31d"
+  },
+  "description": "¿Cuál es el evento que se ejecuta cuando empezamos a presionar una tecla?",
+  "answers": [
+    "keydown"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12045945d9ae36a5ca320"
+  },
+  "description": "¿Cuál es el evento que se ejecuta cuando dejamos de presionar una tecla?",
+  "answers": [
+    "keyup"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12063945d9ae36a5ca323"
+  },
+  "description": "¿Qué es un método? ",
+  "answers": [
+    "Es el nombre para las funciones que creamos dentro de una clase."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a1207f945d9ae36a5ca326"
+  },
+  "description": "¿Cuál es la arquitectura de red de la web?",
+  "answers": [
+    "Cliente-Servidor"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a120a4945d9ae36a5ca329"
+  },
+  "description": "¿Qué es Node.js?",
+  "answers": [
+    "Es el intérprete que nos permite ejecutar JavaScript fuera del navegador."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a120c2945d9ae36a5ca32c"
+  },
+  "description": "¿Cuál es el protocolo que nos permite solicitar y recibir recursos en la web?",
+  "answers": [
+    "HTTP o HyperText Transfer Protocol"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a120ed945d9ae36a5ca32f"
+  },
+  "description": "¿Cuál es la finalidad del formato JSON?",
+  "answers": [
+    "Permitirnos crear datos estructurados."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12106945d9ae36a5ca332"
+  },
+  "description": "¿Qué significa JSON?",
+  "answers": [
+    "JavaScript Object Notation"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
 }]
