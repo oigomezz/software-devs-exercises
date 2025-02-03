@@ -1,31 +1,911 @@
-[
-  {
-    "_id": {
-      "$oid": "673e155fbcc83b6bea71b332"
-    },
-    "description": "¿Cuál es la salida de este código?",
-    "code": "console.log(typeof NaN)",
-    "answers": ["undefined", "NaN", "string", "number"],
-    "correctAnswer": 3
+[{
+  "_id": {
+    "$oid": "67a0e7db119006696378f449"
   },
-  {
-    "_id": {
-      "$oid": "674772b10363b1ea58064ebf"
-    },
-    "description": "¿Cuál es la salida de este código?",
-    "code": "const arr1 = [1, 2, 3];\nconst arr2 = arr1.map(num => num * 2);\nconsole.log(arr2);",
-    "answers": ["[1, 2, 3]", "[2, 4, 6]", "[2, 2, 2]", "[1, 4, 9]"],
-    "correctAnswer": 1
+  "description": "¿Qué es un bit?",
+  "answers": [
+    "La unidad mínima en la que podemos almacenar información."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0e834119006696378f44e"
   },
-  {
-    "_id": {
-      "$oid": "674782773edb92d6cb5ec8e6"
-    },
-    "description": "Prueba editada.",
-    "answers": ["Prueba 1", "Prueba 2", "Prueba 3"],
-    "code": "Prueba editada.",
-    "correctAnswer": 1,
-    "categories": ["Prueba editada."],
-    "__v": 0
-  }
-]
+  "description": "Al momento de elegir una computadora es mejor:",
+  "answers": [
+    "Considerar para qué la queremos y con base en eso elegir."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0ea06119006696378f455"
+  },
+  "description": "¿Qué es el puerto USB?",
+  "answers": [
+    "\"Universal Serial Bus\": nos permite conectar una gran variedad de dispositivos (como memorias o teclados) porque es un estándar."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0ea3d119006696378f458"
+  },
+  "description": "¿Puedo conectar un monitor a mi laptop?",
+  "answers": [
+    "Sí. Siempre y cuando tenga una salida de video, comúnmente del tipo HDMI."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0ea62119006696378f45b"
+  },
+  "description": "¿Para qué sirve el candado kensington lock?",
+  "answers": [
+    "Es una medida de seguridad que me permite asegurar el equipo en entornos de oficina."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0ea8a119006696378f45e"
+  },
+  "description": "¿Cómo puedo cargar mi computador?",
+  "answers": [
+    "El puerto de carga suele ser un puerto circular en los extremos del equipo y lo utilizamos para conectar el cargador."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0eae0119006696378f46a"
+  },
+  "description": "Además de Windows, ¿qué otros sistemas operativos existen para computadoras?",
+  "answers": [
+    "Linux y macOS."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0eb06119006696378f46d"
+  },
+  "description": "¿Qué es Windows 10?",
+  "answers": [
+    "Un sistema operativo fabricado por Microsoft. Es el sistema operativo más utilizado en el mundo."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0eb29119006696378f470"
+  },
+  "description": "¿Qué es lo más importante al momento de instalar programas?",
+  "answers": [
+    "Leer y asegurarnos de que no instalen cosas que no necesitamos. Asegurarnos de que la fuente de donde descargamos el programa sea confiable y no nos de alertas de phishing."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0eb50119006696378f473"
+  },
+  "description": "¿Cómo deberías almacenar tus contraseñas?",
+  "answers": [
+    "Utilizando un gestor de contraseñas."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0eb9d119006696378f47b"
+  },
+  "description": "¿Qué es la verificación en dos pasos? ",
+  "answers": [
+    "Un proceso extra de seguridad en donde necesito un código único que podría llegar a mi teléfono celular además de mi contraseña."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0ebbf119006696378f47e"
+  },
+  "description": "¿Qué podemos hacer con un Email?",
+  "answers": [
+    "Enviar y recibir correos electrónicos para compartir información: fotos, videos, audio, texto, entre otros."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0ebf8119006696378f481"
+  },
+  "description": "¿Qué es un virus informático?",
+  "answers": [
+    "Un programa malicioso hecho para replicarse e infectar nuestras computadoras"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0ec1d119006696378f486"
+  },
+  "description": "¿Qué antivirus se recomienda en el curso?",
+  "answers": [
+    "Avast"
+  ],
+  "code": "",
+  "correctAnswer": -1,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0ec49119006696378f48b"
+  },
+  "description": "¿Qué es un motor de búsqueda?",
+  "answers": [
+    "Un sitio web que nos ayuda a encontrar información en la web."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0ed48119006696378f492"
+  },
+  "description": "Verdadero o Falso: ¿en programación también se pueden aplicar las operaciones matemáticas básicas?",
+  "answers": [
+    "Verdadero",
+    "Falso"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0ed6a119006696378f495"
+  },
+  "description": "¿Cuál es la propiedad matemática conocida por la afirmación “el orden de los factores no altera el producto”?",
+  "answers": [
+    "Conmutativa"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0ed95119006696378f498"
+  },
+  "description": "¿Cuántos dígitos tiene el sistema binario?",
+  "answers": [
+    "Dos"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0edb4119006696378f49b"
+  },
+  "description": "Convierte el número binario 1100100 a decimal:",
+  "answers": [
+    "100"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0ee5e119006696378f49e"
+  },
+  "description": "Convierte el número decimal 456 a binario:",
+  "answers": [
+    "111001000"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0ee7e119006696378f4a1"
+  },
+  "description": "¿Cuál es el resultado de la siguiente suma de binarios: 1101 + 110 ?",
+  "answers": [
+    "10011"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0eea1119006696378f4a4"
+  },
+  "description": "¿Cuál es el resultado de la siguiente resta de binarios: 1001 - 100 ?",
+  "answers": [
+    "101"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0eef9119006696378f4a9"
+  },
+  "description": "¿Cuál es el resultado de la siguiente multiplicación de binarios: 1001 * 1001?",
+  "answers": [
+    "1010001"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0ef16119006696378f4ac"
+  },
+  "description": "¿Cuál es el resultado de la siguiente división de binarios: 1001 / 1001?",
+  "answers": [
+    "1"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0ef38119006696378f4af"
+  },
+  "description": "Las tablas de verdad nos ayudan a determinar cuáles son las condiciones necesarias para que sea verdadero o falso un enunciado.",
+  "answers": [
+    "Verdadero",
+    "Falso"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0ef56119006696378f4b2"
+  },
+  "description": "La Negación de Falso (!F) da como resultado:",
+  "answers": [
+    "V (verdadero)"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0ef76119006696378f4b5"
+  },
+  "description": "¿Cuál es el resultado de la conjunción F Ʌ V?",
+  "answers": [
+    "F"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0ef99119006696378f4b8"
+  },
+  "description": "¿Cuál es el resultado de la disyunción F V V?",
+  "answers": [
+    "V"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0efcb119006696378f4bb"
+  },
+  "description": "¿Cuál es el propósito del operador lógico Y (Expresión1 Y Expresión2)?",
+  "answers": [
+    "Devuelve True cuando Expresión1 y Expresión2 son verdaderas."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0eff2119006696378f4be"
+  },
+  "description": "¿Cuál es el propósito del operador lógico Xor?",
+  "answers": [
+    "Devuelve True si Expresión1 es verdadera o Expresión2 es verdadera, pero no ambas."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0f011119006696378f4c1"
+  },
+  "description": "El operador aritmético dado por el símbolo * se utiliza para:",
+  "answers": [
+    "Multiplicación"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0f02e119006696378f4c4"
+  },
+  "description": "¿Cuál es el propósito del operador de comparación <> ( Número1 <> Número2 )?",
+  "answers": [
+    "Devuelve True si Número1 es diferente que Número2."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0f050119006696378f4c7"
+  },
+  "description": "Para crear un algoritmo es necesario analizar la situación antes de empezar a diseñar o programar.",
+  "answers": [
+    "Verdadero"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0f06e119006696378f4ca"
+  },
+  "description": "Un diagrama de flujo siempre debe contar con un inicio.",
+  "answers": [
+    "Verdadero"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0f096119006696378f4cd"
+  },
+  "description": "Todos los diagramas de flujo siempre deben tener un operador de decisión.",
+  "answers": [
+    "Falso"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0f85b119006696378f4d0"
+  },
+  "description": "¿En qué categorías se dividen las estructuras de control?",
+  "answers": [
+    "Condicionales y Ciclos"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0f875119006696378f4d3"
+  },
+  "description": "“Martha está en el mar” es un dato de tipo:",
+  "answers": [
+    "Texto"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0f895119006696378f4d6"
+  },
+  "description": "34139 es un tipo de dato",
+  "answers": [
+    "Numérico"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0f8b2119006696378f4d9"
+  },
+  "description": "¿Los tipos de dato booleanos se representan con 1 y 2?",
+  "answers": [
+    "Falso"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0f8d5119006696378f4dc"
+  },
+  "description": "¿Un array puede almacenar más de un tipo de dato?",
+  "answers": [
+    "Verdadero"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0f8f1119006696378f4df"
+  },
+  "description": "¿La instrucción if / else es un ciclo?",
+  "answers": [
+    "Falso"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0f90f119006696378f4e2"
+  },
+  "description": "¿La sentencia Switch se utiliza para realizar validaciones de diferentes casos?",
+  "answers": [
+    "Verdadero"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0f941119006696378f4e5"
+  },
+  "description": "¿La sentencia Catch de un bloque Try / Catch nos permite encapsular la sección de nuestro algoritmo en caso de que un resultado haya sido verdadero o sin errores?",
+  "answers": [
+    "Falso",
+    "Verdadero"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0f9ae119006696378f4ea"
+  },
+  "description": "¿Un ciclo for puede inicializarse en 1?",
+  "answers": [
+    "Verdadero",
+    "Falso"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0f9cb119006696378f4ed"
+  },
+  "description": "¿Cuál es la diferencia entre el ciclo while y el ciclo do-while?",
+  "answers": [
+    "El orden en que se ejecuta la primera instrucción."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0fa05119006696378f4f2"
+  },
+  "description": "¿Cuántas iteraciones debe tener un ciclo?",
+  "answers": [
+    "La cantidad de iteraciones las asignamos de acuerdo a la estructura que se va a iterar."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0fa22119006696378f4f5"
+  },
+  "description": "Las funciones sirven para:",
+  "answers": [
+    "Modularizar el código y optimizar nuestros flujos de trabajo."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0fa3d119006696378f4f8"
+  },
+  "description": "¿Qué tipos de scope puede tener una función?",
+  "answers": [
+    "Público o privado"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0fad9119006696378f4fb"
+  },
+  "description": "¿Cómo podríamos definir un lenguaje de programación?",
+  "answers": [
+    "Un conjunto de instrucciones que nos permite comunicarnos con la computadora"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0fafb119006696378f4fe"
+  },
+  "description": "¿Cuál es el mejor lenguaje de programación?",
+  "answers": [
+    "Aquel que cubra las necesidades del proyecto que vas a desarrollar"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0fb23119006696378f501"
+  },
+  "description": "Verdadero o Falso: Javascript es un lenguaje que permite realizar desarrollos para frontend y para backend",
+  "answers": [
+    "Verdadero",
+    "Falso"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0fb50119006696378f504"
+  },
+  "description": "Verdadero o Falso: Con Javascript se pueden crear interacciones en una página web para el usuario",
+  "answers": [
+    "Verdadero",
+    "Falso"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0fb76119006696378f507"
+  },
+  "description": "Verdadero o Falso: Javascript permite crear bases de datos relacionales en su forma más nativa",
+  "answers": [
+    "Falso",
+    "Verdadero"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0fbb1119006696378f50a"
+  },
+  "description": "¿En qué áreas de ciencia es muy popular el uso de Python?",
+  "answers": [
+    "Desarrollo de software, Machine Learning, Análisis de datos"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0fbd8119006696378f50d"
+  },
+  "description": "Verdadero o Falso: ¿Es Python un lenguaje OpenSource?",
+  "answers": [
+    "Verdadero",
+    "Falso"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0fbfd119006696378f510"
+  },
+  "description": "Verdadero o Falso: Python es muy utilizado para la creación de videojuegos ",
+  "answers": [
+    "Verdadero",
+    "Falso"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0fc20119006696378f513"
+  },
+  "description": "¿Cómo se empiezan a escribir las variables en PHP?",
+  "answers": [
+    "Usando el signo $ al inicio de cada variable"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0fc45119006696378f516"
+  },
+  "description": "Verdadero o Falso: El lenguaje PHP permite trabajar con código HTML al mismo tiempo",
+  "answers": [
+    "Verdadero",
+    "Falso"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0fc6a119006696378f519"
+  },
+  "description": "Verdadero o Falso: Con PHP se pueden realizar desarrollos backend de aplicaciones",
+  "answers": [
+    "Verdadero",
+    "Falso"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a0fc89119006696378f51c"
+  },
+  "description": "¿Cuál es la mejor fuente recomendada para conocer la sintaxis detallada de un lenguaje?",
+  "answers": [
+    "Su documentación oficial"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+}]
