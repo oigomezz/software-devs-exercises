@@ -1284,4 +1284,275 @@
     "Desarrollo e Ingeniería"
   ],
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a122abe4297973f0678561"
+  },
+  "description": "¿Cuáles son periféricos de entrada?",
+  "answers": [
+    "Teclado, micrófono, cámara, mouse, escáner."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a122c7e4297973f0678564"
+  },
+  "description": "En binario ¿cómo se representaría el string “hola”?",
+  "answers": [
+    "01101000 01101111 01101100 01100001"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a122e8e4297973f0678567"
+  },
+  "description": "¿Cómo se forma un pixel?",
+  "answers": [
+    "Un Pixel se forma por la combinación de tonos de 3 sub-píxeles que son rojo, verde y azul (RGB)."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12319e4297973f067856a"
+  },
+  "description": "¿Cuáles son todas las partes de un Critical Rendering Path?",
+  "answers": [
+    "1. DOM 2. CSSOM 3. Render Tree 4. Layout 5. Paint"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12337e4297973f067856d"
+  },
+  "description": "¿Cómo convierte una computadora texto en unos y ceros?",
+  "answers": [
+    "Las computadoras convierten texto y otros datos en binarios utilizando un valor asignado de códigos como ASCII y Unicode."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12358e4297973f0678570"
+  },
+  "description": "¿En qué paso del Critical Rendering Path, se combina el DOM y el CSSOM?",
+  "answers": [
+    "Render Tree"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12379e4297973f0678573"
+  },
+  "description": "HTML y CSS son dos de los principales estándares web.",
+  "answers": [
+    "Verdadero",
+    "Falso"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a1239be4297973f0678576"
+  },
+  "description": "¿En qué paso del Critical Rendering Path comenzamos a crear la estructura del proyecto sin diseño?",
+  "answers": [
+    "Layout"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a123c3e4297973f0678579"
+  },
+  "description": "¿Cuáles fueron las tres tecnologías que dieron nacimiento a la web como la conocemos hoy en día?",
+  "answers": [
+    "HTML, URL y HTTP."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a123fbe4297973f067857c"
+  },
+  "description": "¿Qué es ISP?",
+  "answers": [
+    "Proveedor de servicios de Internet (Internet Service Provider)."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a1241fe4297973f067857f"
+  },
+  "description": "¿Para qué servían las tarjetas perforadas?",
+  "answers": [
+    "Para almacenar información e ingresar instrucciones a una computadora."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a1243ee4297973f0678582"
+  },
+  "description": "¿Quién creó el primer navegador?",
+  "answers": [
+    "Tim Berners-Lee"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a1245fe4297973f0678585"
+  },
+  "description": "¿Cuál es el protocolo que utilizamos para poder enviar y recibir peticiones en la web?",
+  "answers": [
+    "HTTP"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a1247ee4297973f0678588"
+  },
+  "description": "En binario ¿cómo se representaría el número 38?",
+  "answers": [
+    "00100110"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a1249ee4297973f067858b"
+  },
+  "description": "¿Cuántos bits tiene un byte?",
+  "answers": [
+    "Un byte tiene 8 bits."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a124c2e4297973f067858e"
+  },
+  "description": "¿Cuáles son periféricos de salida?",
+  "answers": [
+    "Monitor, bocinas, audífonos e impresora."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a124e4e4297973f0678591"
+  },
+  "description": "¿Cómo representamos el color rojo en RGB?",
+  "answers": [
+    "(255,0,0)"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12504e4297973f0678594"
+  },
+  "description": "¿Qué significa WWW?",
+  "answers": [
+    "World Wide Web"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
 }]
