@@ -1555,4 +1555,456 @@
     "Desarrollo e Ingeniería"
   ],
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a126e875f64d276fd79698"
+  },
+  "description": "¿Cuántos bits utiliza una dirección ipv4?",
+  "answers": [
+    "32"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a1270875f64d276fd7969b"
+  },
+  "description": "¿De qué forma fluyen dentro de un computador los ceros y unos?",
+  "answers": [
+    "Con pulsos eléctricos"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a1272e75f64d276fd7969e"
+  },
+  "description": "¿Cuántos bits tiene un byte?",
+  "answers": [
+    "8"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a1275c75f64d276fd796a1"
+  },
+  "description": "¿Qué es UNICODE?",
+  "answers": [
+    "El estándar que define la tabla entre caracteres y su equivalente en bytes"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a1278e75f64d276fd796a4"
+  },
+  "description": "El procesador solo puede interpretar",
+  "answers": [
+    "Ceros y unos"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a127cd75f64d276fd796a7"
+  },
+  "description": "La velocidad de los procesadores se mide en",
+  "answers": [
+    "Hertz"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a1280b75f64d276fd796aa"
+  },
+  "description": "Uno de los trabajos más importantes de la BIOS es identificar",
+  "answers": [
+    "El hardware y periféricos conectados"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a1283f75f64d276fd796ad"
+  },
+  "description": "La memoria RAM accede a los datos de forma",
+  "answers": [
+    "Aleatoria"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a1287375f64d276fd796b0"
+  },
+  "description": "¿Cuál no es una característica de discos duros?",
+  "answers": [
+    "Almacena los datos de forma temporal"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a1289775f64d276fd796b3"
+  },
+  "description": "Un archivo de texto con la palabra \"Platzi\" debe pesar",
+  "answers": [
+    "6 bytes"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a128b875f64d276fd796b6"
+  },
+  "description": "Los primeros sectores de datos de un disco duro guardan",
+  "answers": [
+    "Un índice de donde se encuentran guardados los archivos"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a128d875f64d276fd796b9"
+  },
+  "description": "¿Qué es lo primero que carga un sistema operativo en RAM?",
+  "answers": [
+    "El kernel"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a1290075f64d276fd796bc"
+  },
+  "description": "¿Qué es un switch en una red?",
+  "answers": [
+    "El dispositivo que conecta múltiples dispositivos a la misma red"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a1292075f64d276fd796bf"
+  },
+  "description": "¿Qué es una IP?",
+  "answers": [
+    "Es un número asignado para identificar los computadores en la red"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a1294175f64d276fd796c2"
+  },
+  "description": "¿Cuál es la IP que normalmente se refiere al mismo equipo o localhost?",
+  "answers": [
+    "127.0.0.1"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a1297475f64d276fd796c5"
+  },
+  "description": "El router asigna ips de forma automática usando el protocolo",
+  "answers": [
+    "DHCP"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a1299775f64d276fd796c8"
+  },
+  "description": "¿Qué rango de puertos de red requieren permisos de administrador en el sistema operativo para ser usados?",
+  "answers": [
+    "1 - 1024"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a129c475f64d276fd796cb"
+  },
+  "description": "Para que una app móvil tenga acceso al hardware de tu dispositivo debe tener un",
+  "answers": [
+    "Manifiesto de permisos"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a129e675f64d276fd796ce"
+  },
+  "description": "¿Cuál es el sistema operativo por defecto de un Arduino?",
+  "answers": [
+    "Ninguno"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12a0975f64d276fd796d1"
+  },
+  "description": "¿Cómo un sistema operativo sabe que software usar para un tipo de archivo?",
+  "answers": [
+    "El sistema operativo lee la cabecera del archivo donde encuentra el tipo de archivo y tiene una base de datos que asocia las extensiones con un software"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12a3475f64d276fd796d4"
+  },
+  "description": "Para tener una imagen con calidad de color de 32 bits, cada pixel debe ser representado con",
+  "answers": [
+    "8 Bytes"
+  ],
+  "code": "",
+  "correctAnswer": -1,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12a9b75f64d276fd796d7"
+  },
+  "description": "¿Cuál de estos no es un codec de vídeo?",
+  "answers": [
+    "mp4"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12abd75f64d276fd796da"
+  },
+  "description": "Un contenedor de vídeos es",
+  "answers": [
+    "El formato que agrupa el video y audio con un encoding"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12ae575f64d276fd796dd"
+  },
+  "description": "¿Qué es un System-on-a-Chip?",
+  "answers": [
+    "Un chip especial que agrupa CPU/GPU y otros chips de un dispositivo"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12b0675f64d276fd796e0"
+  },
+  "description": "Un disco de estado sólido es especial porque",
+  "answers": [
+    "No tiene piezas móviles a nivel de hardware"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12b2675f64d276fd796e3"
+  },
+  "description": "La mayor parte del tráfico de Internet viaja a través de",
+  "answers": [
+    "Cables submarinos"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12b4c75f64d276fd796e6"
+  },
+  "description": "El tiempo que tarda un servidor en responder una petición se mide en",
+  "answers": [
+    "Milisegundos"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12b7475f64d276fd796e9"
+  },
+  "description": "A nivel físico, la limitación de velocidad de una red depende de",
+  "answers": [
+    "La velocidad de la luz"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12b9d75f64d276fd796ec"
+  },
+  "description": "Tu dispositivo móvil puede ser un servidor en Internet",
+  "answers": [
+    "Verdadero",
+    "Falso"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12bd075f64d276fd796ef"
+  },
+  "description": "Un Raspberry Pi con wifi puede ser un servidor en Internet",
+  "answers": [
+    "Verdadero",
+    "Falso"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
 }]
