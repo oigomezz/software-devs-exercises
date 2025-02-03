@@ -2007,4 +2007,229 @@
     "Desarrollo e Ingeniería"
   ],
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12daf727b06939660b3b4"
+  },
+  "description": "¿Por qué razón utilizamos Google Chrome?",
+  "answers": [
+    "Por ser el navegador más utilizado, es importante visualizar nuestros proyectos web como los verán la gran mayoría de usuarios"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12dd3727b06939660b3b7"
+  },
+  "description": "¿Para qué nos sirven las DevTools?",
+  "answers": [
+    "Para facilitar el desarrollo de nuestros proyectos web, buscar y corregir errores, entender el rendimiento de nuestro sitio"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12df6727b06939660b3ba"
+  },
+  "description": "¿Qué es VSCode?",
+  "answers": [
+    "Visual Studio Code (VS Code) es un editor de código fuente desarrollado por Microsoft, es código abierto, y es multiplataforma, además es el que usarás en el resto de cursos de desarrollo web"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12e18727b06939660b3bd"
+  },
+  "description": "¿Qué es WSL2?",
+  "answers": [
+    "Windows Subsystem for Linux2, un subsistema en Windows que ejecuta el kernel completo de Linux, permitiéndonos ejecutar cualquier distribución de Linux que necesitamos directamente en Windows"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12e37727b06939660b3c0"
+  },
+  "description": "¿Para qué nos sirve utilizar WSL2?",
+  "answers": [
+    "WSL2 nos permite tomar todas las grandes ventajas y facilidades que siempre han existido de desarrollar en Linux, como sus terminales, sin tener que acostumbrarnos a un Sistema Operativo distinto a que usamos día a día, quizás tienes videollamadas, y en Ubuntu por ejemplo puede ser difícil compartir audio, video, etc. Así que esta fue la forma de Microsoft de ser un sistema útil para desarrollar software que tradicionalmente se hacía en Linux dando la practicidad de Windows"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12e5d727b06939660b3c3"
+  },
+  "description": "¿Qué es Ubuntu?",
+  "answers": [
+    "Una distribución Linux, es de las más usadas, tiene una terminal potente y fácil de comenzar a utilizar"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12e87727b06939660b3c6"
+  },
+  "description": "¿Qué es Virtual Box?",
+  "answers": [
+    "Un software de virtualización que nos permitirá instalar distintos sistemas operativos virtualizando el entorno en el que estamos, compartiendo recursos con la máquina host"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12ead727b06939660b3c9"
+  },
+  "description": "¿Por qué la virtualización puede ser más lenta que soluciones integradas como WSL2?",
+  "answers": [
+    "Debido a que al virtualizar estamos reservando recursos para que sean ejecutados por la máquina virtual y además estamos corriendo el software encargado de la virtualización misma, esto puede ser intensivo de RAM, disco duro, y procesador"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12ecc727b06939660b3cc"
+  },
+  "description": "¿Qué es una terminal?",
+  "answers": [
+    "Un software que nos permite interactuar directamente con nuestra computadora a través de comandos y texto, tal como lo hacemos tradicionalmente a través de ventanas, íconos, menús y botones en Windows "
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12eee727b06939660b3cf"
+  },
+  "description": "Node.js es:",
+  "answers": [
+    "Un intérprete de JavaScript, que nos permitirá ejecutar JavaScript en nuestra terminal y no solo en el navegador, se utiliza principalmente para servidores"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12f63727b06939660b3d6"
+  },
+  "description": "¿Cuáles son algunos de los principales usos de Python?",
+  "answers": [
+    "Desarrollo backend, Data Science, IA, entre otros"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12f82727b06939660b3d9"
+  },
+  "description": "¿Quíén fue el creador de Git?",
+  "answers": [
+    "Linus Torvalds, el mismo creador de Linux"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12fa2727b06939660b3dc"
+  },
+  "description": "¿Qué es Git?",
+  "answers": [
+    "Git es un sistema de control de versiones y manejo de repositorios, nos permite manejar el progreso en el desarrollo de nuestro software, probar cosas nuevas, regresar a versiones anteriores, y demás"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12fc4727b06939660b3df"
+  },
+  "description": "¿Qué es GitHub?",
+  "answers": [
+    "Un sitio web creado para que diferentes desarrolladoras y equipos de trabajo puedan subir sus repositorios de Git y manejar de forma eficiente y colaborativa, en la nube su proceso de desarrollo"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a12fe8727b06939660b3e2"
+  },
+  "description": "¿Por qué es importante saber utilizar Git?",
+  "answers": [
+    "Porque es el sistema de control de versiones usado por de facto en la industria tech, nos permite al usarlo con un sitio como Github o similares colaborar y trabajar en equipo"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
 }]
