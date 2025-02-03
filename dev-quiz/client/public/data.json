@@ -2232,4 +2232,154 @@
     "Desarrollo e Ingeniería"
   ],
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a130f92a36ad45ef6f9402"
+  },
+  "description": "¿Qué es GNU/Linux?",
+  "answers": [
+    "Es una familia de sistemas operativos que usan Linux."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a131212a36ad45ef6f9405"
+  },
+  "description": "Si queremos probar un sistema operativo sin instalarlo en nuestra computadora, podemos:",
+  "answers": [
+    "Instalarlo en una máquina virtual."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a131702a36ad45ef6f9408"
+  },
+  "description": "¿Qué software podemos usar para crear una *USB booteable*?",
+  "answers": [
+    "Rufus"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a131902a36ad45ef6f940b"
+  },
+  "description": "¿Qué opción es súper importante que desactivemos en el BIOS para poder instalar Ubuntu?",
+  "answers": [
+    "Secure boot"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a131b32a36ad45ef6f940e"
+  },
+  "description": "¿Qué versión de Google Chrome viene con características experimentales?",
+  "answers": [
+    "Google Chrome Canary"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a131d52a36ad45ef6f9411"
+  },
+  "description": "¿Qué son las DevTools?",
+  "answers": [
+    "Son herramientas que nos ayudan a inspeccionar los elementos de una página web. "
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a131f92a36ad45ef6f9414"
+  },
+  "description": "¿Qué extensión nos permite actualizar los cambios de nuestra página web de manera automática?",
+  "answers": [
+    "Liver Server"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a132532a36ad45ef6f9417"
+  },
+  "description": "¿Qué comando nos sirve para instalar paquetes en Ubuntu?",
+  "answers": [
+    "sudo apt install package_name"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a132752a36ad45ef6f941a"
+  },
+  "description": "¿Qué utilidad nos ayuda a manejar diferentes versiones de Node?",
+  "answers": [
+    "nvm"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a132c72a36ad45ef6f941d"
+  },
+  "description": "¿Qué es Git?",
+  "answers": [
+    "Es un sistema de control de versiones."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
 }]
