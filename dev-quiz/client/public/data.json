@@ -2382,4 +2382,154 @@
     "Desarrollo e Ingeniería"
   ],
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a1347cfbf91bc5723560d7"
+  },
+  "description": "¿Qué es el navegador?",
+  "answers": [
+    "La herramienta que nos sirve para interpretar nuestro HTML, CSS y JavaScript."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a134a7fbf91bc5723560da"
+  },
+  "description": "¿Qué son las DevTools?",
+  "answers": [
+    "Herramientas o versiones de un navegador que incluye utilidades para ver y analizar el comportamiento de lo que estamos programando."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a134cefbf91bc5723560dd"
+  },
+  "description": "¿Qué es un editor de texto o editor de código?",
+  "answers": [
+    "La herramienta que nos permite escribir nuestro código en la extensión que sea necesaria."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a134f3fbf91bc5723560e0"
+  },
+  "description": "¿Para qué nos pueden servir las extensiones de Visual Studio Code?",
+  "answers": [
+    "Para poder ejecutar nuestro código, para verificar la escritura del mismo, para darle formato y que sea legible, entre muchas aplicaciones más."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a13525fbf91bc5723560e3"
+  },
+  "description": "¿Para qué nos sirve la extensión live server?",
+  "answers": [
+    "Para visualizar en nuestro navegador los cambios que guardamos de inmediato, sin necesidad de recargar la página cada vez que guardemos los cambios."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a13546fbf91bc5723560e6"
+  },
+  "description": "¿Para qué necesitamos Git?",
+  "answers": [
+    "Para manejar versiones de nuestro código, para colaborar y trabajar en equipo."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a13565fbf91bc5723560e9"
+  },
+  "description": "¿Qué es GitHub?",
+  "answers": [
+    "Una plataforma donde podemos subir repositorios utilizando Git"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a1358afbf91bc5723560ec"
+  },
+  "description": "Homebrew es ...",
+  "answers": [
+    "El manejador de paquetes más utilizado en macOS."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a135b2fbf91bc5723560ef"
+  },
+  "description": "El comando npm nos sirve para:",
+  "answers": [
+    "Manejar paquetes para Node.js."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a135d3fbf91bc5723560f2"
+  },
+  "description": "¿Qué comando nos sirve para mostrar los archivos y directorios en nuestra terminal?",
+  "answers": [
+    "ls"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
 }]
