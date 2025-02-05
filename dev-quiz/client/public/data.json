@@ -2532,4 +2532,306 @@
     "Desarrollo e Ingeniería"
   ],
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a3939e4452f4147fd53c86"
+  },
+  "description": "La shell o línea de comandos es:",
+  "answers": [
+    "Una interfaz gráfica que nos permite escribir en ella."
+  ],
+  "code": "",
+  "correctAnswer": -1,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a393b84452f4147fd53c89"
+  },
+  "description": "¿Qué hace el comando pwd?",
+  "answers": [
+    "Imprime la ruta del directorio actual de trabajo."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a393d54452f4147fd53c8c"
+  },
+  "description": "Para crear un archivo usamos el comando:",
+  "answers": [
+    "touch mi_archivo"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a393f74452f4147fd53c8f"
+  },
+  "description": "¿Con cuál comando copiamos un directorio y su contenido? ",
+  "answers": [
+    "cp -r mi_directorio ruta_destino"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a3941c4452f4147fd53c92"
+  },
+  "description": "¿Qué comando muestra las últimas 5 líneas de texto de un documento?",
+  "answers": [
+    "tail -n 5 mi_texto"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a394374452f4147fd53c95"
+  },
+  "description": "Para leer el manual de usuario de un comando usamos:",
+  "answers": [
+    "man"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a3945c4452f4147fd53c98"
+  },
+  "description": "Las wildcards son caracteres que nos permiten definir patrones avanzados de búsqueda en la línea de comandos, esto es:",
+  "answers": [
+    "Verdadero",
+    "Falso"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a3948a4452f4147fd53c9b"
+  },
+  "description": "Si queremos listar todos los archivos que sean extensión txt podemos usar el comando:",
+  "answers": [
+    "ls *.txt"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a394ba4452f4147fd53c9e"
+  },
+  "description": "El file descriptor correspondiente al stderr es:",
+  "answers": [
+    "2"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a394d94452f4147fd53ca1"
+  },
+  "description": "¿Qué operador nos ayuda a concatenar la salida de un comando a un archivo de texto?",
+  "answers": [
+    ">>"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a394fb4452f4147fd53ca4"
+  },
+  "description": "El pipe operator redirecciona la salida de un comando a la entrada de otro comando, esto es:",
+  "answers": [
+    "Verdadero",
+    "Falso"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a395194452f4147fd53ca7"
+  },
+  "description": "Si queremos correr una serie de comandos de manera asíncrona lo hacemos con el operador:",
+  "answers": [
+    "&"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a395364452f4147fd53caa"
+  },
+  "description": "Si deseamos condicionar la ejecución de un comando solo si uno anterior se ejecuto de manera exitosa podemos usar:",
+  "answers": [
+    "&&"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a395574452f4147fd53cad"
+  },
+  "description": "Es una mala práctica de seguridad asignar la siguiente configuración de permisos en modo octal a cualquier archivo o directorio.",
+  "answers": [
+    "777"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a395804452f4147fd53cb0"
+  },
+  "description": "Con el siguiente comando podemos ver la ruta del directorio Home de nuestro usuario:",
+  "answers": [
+    "echo $HOME"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a3959f4452f4147fd53cb3"
+  },
+  "description": "Es un comando que nos ayuda a buscar la ruta de binarios o ejecutables en nuestro sistema.",
+  "answers": [
+    "which"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a395bb4452f4147fd53cb6"
+  },
+  "description": "Para buscar todas las imágenes png dentro de nuestra computadora podemos ejecutar:",
+  "answers": [
+    "find / -name *.png"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a395d64452f4147fd53cb9"
+  },
+  "description": "Para usar grep sin distinción de mayúsculas o minúsculas usamos:",
+  "answers": [
+    "-i"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a395f34452f4147fd53cbc"
+  },
+  "description": "¿Qué comando nos ayuda consultar la disponibilidad de un equipo en una red?",
+  "answers": [
+    "ping"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a3960a4452f4147fd53cbf"
+  },
+  "description": "¿Qué comando muestra los procesos que consumen más recursos en nuestro sistema?",
+  "answers": [
+    "top"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
 }]
