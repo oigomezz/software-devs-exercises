@@ -3,21 +3,21 @@ import {
   List,
   ListItem,
   ListItemButton,
+  ListItemIcon,
   ListItemText,
   Typography,
 } from "@mui/material";
-import { type Question } from "../types";
 import { useQuestionsStore } from "../store/questions";
 
 export const Recent = () => {
   const title = useQuestionsStore((state) => state.title);
   const loading = useQuestionsStore((state) => state.loading);
   const questions = useQuestionsStore((state) => state.questions);
-  const fetchQuestion = useQuestionsStore((state) => state.getQuestionById);
   const goToPage = useQuestionsStore((state) => state.goToPage);
+  const setCurrent = useQuestionsStore((state) => state.setCurrentQuestion);
 
-  const handleClick = (question: Question) => {
-    fetchQuestion(question._id);
+  const handleClick = (index: number) => {
+    setCurrent(index);
     goToPage("results");
   };
 
@@ -45,11 +45,12 @@ export const Recent = () => {
             {questions.map((question, index) => (
               <ListItem key={index} disablePadding divider>
                 <ListItemButton
-                  onClick={() => handleClick(question)}
+                  onClick={() => handleClick(index)}
                   sx={{
                     backgroundColor: "transparent",
                   }}
                 >
+                  <ListItemIcon> {index + 1} </ListItemIcon>
                   <ListItemText primary={question.description} />
                 </ListItemButton>
               </ListItem>

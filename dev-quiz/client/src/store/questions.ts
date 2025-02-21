@@ -10,6 +10,7 @@ interface State {
   questions: Question[];
   idQuestion: string;
   currentQuestion: number;
+  setCurrentQuestion: (currentQuestion: number) => void;
   getLastQuestions: (limit: number) => Promise<void>;
   getQuestions: (search: string) => Promise<void>;
   getQuestionById: (id: string) => Promise<void>;
@@ -35,6 +36,10 @@ export const useQuestionsStore = create<State>((set, get) => {
     questions: [],
     idQuestion: "",
     currentQuestion: 0,
+    setCurrentQuestion: (current: number) => {
+      set({ currentQuestion: current }, false);
+    },
+    
     getQuestions: async (search: string) => {
       set({ loading: true }, false);
       const url = `${API}/quiz/getQuestions/${search}`;

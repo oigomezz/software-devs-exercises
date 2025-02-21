@@ -15,13 +15,13 @@ export const Home = () => {
 
   useEffect(() => {
     getLastQuestions(5);
-    setTitle("Recientes")
+    setTitle("Recientes");
   }, []);
 
   const handleSubmit = (event: { preventDefault: () => void }) => {
     event.preventDefault();
-    setTitle(`Resultados: ${search}`);
     fetchQuestions(search);
+    setTitle(`Resultados de la busqueda: ${search}`);
   };
 
   return (
