@@ -2834,4 +2834,1074 @@
     "Desarrollo e Ingeniería"
   ],
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf707c33def391464a54fa"
+  },
+  "description": "¿Qué comando usarías para clonar un repositorio desde GitHub a tu máquina local?",
+  "answers": [
+    "git clone"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf70d333def391464a54fd"
+  },
+  "description": "¿Cuál es el propósito de `git merge` en Git?",
+  "answers": [
+    "Unir ramas en un solo historial"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf710133def391464a5500"
+  },
+  "description": "¿Qué comando permite añadir todos los cambios en el área de preparación en un solo paso?",
+  "answers": [
+    "git add ."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf712133def391464a5503"
+  },
+  "description": "Después de realizar cambios en tu repositorio local, ¿qué comando usas para actualizar el remoto?",
+  "answers": [
+    "git push"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf717933def391464a5508"
+  },
+  "description": "¿Qué comando en Git muestra el historial de commits de una rama?",
+  "answers": [
+    "git log"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf719a33def391464a550b"
+  },
+  "description": "Al crear un nuevo repositorio en GitHub, ¿qué archivo es opcional para especificar instrucciones de instalación?",
+  "answers": [
+    "README.md"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf71be33def391464a550e"
+  },
+  "description": "Si deseas deshacer el último commit pero mantener los cambios en el área de preparación, ¿qué comando usarías?",
+  "answers": [
+    "git reset --soft HEAD~1"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf71e033def391464a5511"
+  },
+  "description": "¿Cuál es la mejor práctica al iniciar un proyecto colaborativo en GitHub?",
+  "answers": [
+    "Crear un repositorio y un archivo README con instrucciones iniciales"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf71fc33def391464a5514"
+  },
+  "description": "Si quieres colaborar en un proyecto público de GitHub, ¿cuál es el primer paso recomendado?",
+  "answers": [
+    "Hacer un fork del repositorio en tu cuenta"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf721e33def391464a5517"
+  },
+  "description": "\n¿Cuál de las siguientes opciones describe mejor la finalidad de un 'pull request' en GitHub?",
+  "answers": [
+    "Proponer cambios en el repositorio principal"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf727133def391464a551b"
+  },
+  "description": "\n¿Qué diferencia hay entre `git reset --hard` y `git reset --soft`?",
+  "answers": [
+    "`git reset --hard` elimina los cambios, mientras que `git reset --soft` los mantiene en staging"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf729733def391464a551e"
+  },
+  "description": "Si deseas ver los archivos modificados desde el último commit, ¿qué comando utilizarías?",
+  "answers": [
+    "git status"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf72c133def391464a5522"
+  },
+  "description": "¿Qué representa `HEAD` en Git?",
+  "answers": [
+    "La referencia al commit actual en la rama activa"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf72e233def391464a5525"
+  },
+  "description": "\n¿Qué ocurre cuando usas `git push origin main` en tu terminal?",
+  "answers": [
+    "Se envían los cambios locales de `main` al repositorio remoto"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf730933def391464a5528"
+  },
+  "description": "¿Cuál es la diferencia entre `git fetch` y `git pull`?",
+  "answers": [
+    "`git fetch` obtiene cambios sin aplicarlos, `git pull` los aplica automáticamente"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf732b33def391464a552b"
+  },
+  "description": "¿Qué significa el mensaje de error 'merge conflict' en Git?",
+  "answers": [
+    "Dos ramas tienen cambios en la misma línea de un archivo"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf734b33def391464a552e"
+  },
+  "description": "Si deseas eliminar una rama local que ya no necesitas, ¿qué comando utilizas?",
+  "answers": [
+    "git branch -d"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf736e33def391464a5532"
+  },
+  "description": "¿Qué archivo se suele usar en GitHub Pages para configurar el sitio?",
+  "answers": [
+    "workflow.yml"
+  ],
+  "code": "",
+  "correctAnswer": -1,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf739133def391464a5535"
+  },
+  "description": "\nEn GitHub Actions, ¿qué archivo define el flujo de trabajo de automatización?",
+  "answers": [
+    ".github/workflows/.yml"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf73ac33def391464a5538"
+  },
+  "description": "Si quieres habilitar GitHub Pages en un repositorio, ¿dónde configuras el origen del contenido?",
+  "answers": [
+    "En la configuración de GitHub Pages del repositorio"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf73ce33def391464a553b"
+  },
+  "description": "¿Para qué se utiliza el archivo `.github/workflows/main.yml` en GitHub Actions?",
+  "answers": [
+    "Definir los pasos para automatizar tareas como tests o despliegues"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf73ec33def391464a553e"
+  },
+  "description": "¿Cuál es el propósito de una Wiki en GitHub?",
+  "answers": [
+    "Documentar el proyecto para que los colaboradores tengan información detallada"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf740833def391464a5541"
+  },
+  "description": "Si deseas deshacer el último commit pero mantener los cambios en el área de preparación, ¿qué comando usas?",
+  "answers": [
+    "git reset --soft HEAD~1"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf742633def391464a5544"
+  },
+  "description": "¿Cómo configuras GitHub Pages para desplegar desde la rama `docs` en lugar de `main`?",
+  "answers": [
+    "En la configuración de GitHub Pages, seleccionando `docs` en lugar de `main`"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf744933def391464a5547"
+  },
+  "description": "En GitHub Actions, ¿cómo se llama el archivo YAML que define un 'job' para ejecutar pruebas?",
+  "answers": [
+    ".github/workflows/.yml"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf759733def391464a554a"
+  },
+  "description": "HTML es un lenguaje de marcado de hipertexto. Este enunciado es",
+  "answers": [
+    "Verdadero",
+    "Falso"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf75b833def391464a554d"
+  },
+  "description": "CSS son hojas de estilo en cascada. Este enunciado es",
+  "answers": [
+    "Verdadero",
+    "Falso"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf75d633def391464a5550"
+  },
+  "description": "¿Para qué nos sirven los motores de renderizado?",
+  "answers": [
+    "Para pasar los archivos a píxeles en pantalla"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf760533def391464a5553"
+  },
+  "description": "El HTML semántico NO nos permite",
+  "answers": [
+    "Determinar qué reglas de CSS deben aplicarse a las etiquetas de HTML"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf763333def391464a5556"
+  },
+  "description": "Con HTML semántico, usar una etiqueta <div> en lugar de una específica como <article> para escribir un artículo es",
+  "answers": [
+    "Incorrecto",
+    "Correcto"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf765233def391464a5559"
+  },
+  "description": "La definición de \"cascada\" significa que",
+  "answers": [
+    "El orden de las reglas en CSS importa."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf767233def391464a555c"
+  },
+  "description": "Las reglas de CSS que tienen menor especificidad (sin tener en cuenta el selector universal), son",
+  "answers": [
+    "Elementos y pseudoelementos."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf769833def391464a555f"
+  },
+  "description": "#id h1::first-letter es más específico que p .sidemenu div:hover",
+  "answers": [
+    "Verdadero",
+    "Falso"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf76b733def391464a5562"
+  },
+  "description": "¿Cuál de los siguientes NO es un tipo de selector combinador?",
+  "answers": [
+    "a[href=\"…\"]"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf771d33def391464a5565"
+  },
+  "description": "El colapso de márgenes sucede cuando:",
+  "answers": [
+    "Hay dos elementos bloque adyacentes."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf776c33def391464a5568"
+  },
+  "description": "La metodología que nos sugiere tener una sintaxis donde se pueda diferenciar el bloque de los elementos y de los modificadores es:",
+  "answers": [
+    "BEM"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf778a33def391464a556b"
+  },
+  "description": ":hover es",
+  "answers": [
+    "Una pseudoclase"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf77a833def391464a556e"
+  },
+  "description": "¿Qué es ::before?",
+  "answers": [
+    "Un pseudoelemento"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf781033def391464a5571"
+  },
+  "description": "El selector que selecciona todos los elementos <span> donde el padre es un elemento <p> es",
+  "answers": [
+    "p > span"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf783633def391464a5574"
+  },
+  "description": "Si debes de colocar una barra de navegación con HTML semántico, ¿cuál etiqueta usarías?",
+  "answers": [
+    "<nav>"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf78f133def391464a5577"
+  },
+  "description": "Usamos display: grid; y place-items: center; en el elemento contenedor para:",
+  "answers": [
+    "Centrar los elementos hijos tanto vertical como horizontalmente."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf791033def391464a557a"
+  },
+  "description": "justify-content es una propiedad de los elementos:",
+  "answers": [
+    "Contenedores"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf792e33def391464a557d"
+  },
+  "description": "@media (max-width: 640px) nos indica que el código dentro de él será para:",
+  "answers": [
+    "Pantallas desde 0px hasta 640px"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf797f33def391464a5580"
+  },
+  "description": ":root nos permite definir variables y usarlas mediante la función var():",
+  "answers": [
+    "Verdadero",
+    "Falso"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf79a333def391464a5583"
+  },
+  "description": ".email-image img, selecciona:",
+  "answers": [
+    "Todas las imágenes que estén dentro de .email-image"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf79be33def391464a5586"
+  },
+  "description": ".product-info div p:nth-child(1) se lee como",
+  "answers": [
+    "El primer hijo de tipo p que está dentro del div que está dentro de .product-info"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf79e033def391464a5589"
+  },
+  "description": "margin: 24px 0 0; es lo mismo que decir",
+  "answers": [
+    "margin-top: 24px; margin-right: 0; margin-bottom: 0; margin-left: 0;"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf7a0233def391464a558c"
+  },
+  "description": "La propiedad flex-direction es por defecto",
+  "answers": [
+    "Row"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf7a2333def391464a558f"
+  },
+  "description": "Padding es el espacio",
+  "answers": [
+    "Entre el contenido y el borde."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf7a4333def391464a5592"
+  },
+  "description": ":nth-child() es",
+  "answers": [
+    "Una pseudoclase"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf7a6033def391464a5595"
+  },
+  "description": "font-weight es la propiedad que nos da el",
+  "answers": [
+    "Grosor del texto"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf7a8733def391464a5598"
+  },
+  "description": "\nLa propiedad que usamos para crear únicamente columnas en una grid es",
+  "answers": [
+    "grid-template-columns"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf7ab533def391464a559b"
+  },
+  "description": "text-decoration: none; la usamos para",
+  "answers": [
+    "Remover los estilos de los textos."
+  ],
+  "code": "",
+  "correctAnswer": -1,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf7adb33def391464a559e"
+  },
+  "description": "La etiqueta <link> se debe colocar dentro de la etiqueta",
+  "answers": [
+    "<head>"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf987f33def391464a55a1"
+  },
+  "description": "¿Qué es una variable en JavaScript?",
+  "answers": [
+    "Un espacio en la memoria que almacena datos."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf989e33def391464a55a4"
+  },
+  "description": "¿Cuál es la forma correcta de declarar una variable en JavaScript?",
+  "answers": [
+    "let myVariable;"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf98b633def391464a55a7"
+  },
+  "description": "¿Qué tipo de datos es true en JavaScript?",
+  "answers": [
+    "Booleano"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf98d333def391464a55aa"
+  },
+  "description": "¿Cuál es el resultado de 5 + \"5\" en JavaScript?",
+  "answers": [
+    "\"55\""
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf98f033def391464a55ad"
+  },
+  "description": "¿Cuál es el resultado de 10 == \"10\" en JavaScript?",
+  "answers": [
+    "TRUE"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf990f33def391464a55b0"
+  },
+  "description": "¿Cuál es la sintaxis correcta para una declaración if en JavaScript?",
+  "answers": [
+    "if (condición) { código }"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf992a33def391464a55b3"
+  },
+  "description": "¿Cuál es el resultado del siguiente código? let x = 10; if (x > 5) { x = x + 5; }",
+  "answers": [
+    "15"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf994b33def391464a55b6"
+  },
+  "description": "¿Cuál es la sintaxis correcta para un switch en JavaScript?",
+  "answers": [
+    "switch (x) {   case 1:     // código     break; }"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf999933def391464a55bb"
+  },
+  "description": "¿Qué hace el siguiente código? ",
+  "answers": [
+    "Muestra los elementos del array."
+  ],
+  "code": "let arr = [1, 2, 3]; \nfor (let item of arr) { console.log(item); }",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf99c733def391464a55bf"
+  },
+  "description": "¿Cómo se declara una función en JavaScript?",
+  "answers": [
+    "functionmyFunction(){   // código }"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf99e233def391464a55c2"
+  },
+  "description": "¿Cuál es la diferencia entre una función y un método en JavaScript?",
+  "answers": [
+    "Una función es un bloque de código independiente, un método es una función asociada a un objeto."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf9a0233def391464a55c5"
+  },
+  "description": "¿Cuál es la forma correcta de crear un array en JavaScript?",
+  "answers": [
+    "let arr = [1, 2, 3];"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf9a2033def391464a55c8"
+  },
+  "description": "¿Cuál es la función para agregar un elemento al final de un array en JavaScript?",
+  "answers": [
+    "arr.push(4);"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf9a3c33def391464a55cb"
+  },
+  "description": "¿Cómo se declara un objeto en JavaScript?",
+  "answers": [
+    "let obj = {name: \"John\", age: 30};"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf9a5e33def391464a55ce"
+  },
+  "description": "¿Qué es una promesa en JavaScript?",
+  "answers": [
+    "Un objeto que representa la eventual finalización (o falla) de una operación asíncrona."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf9a7933def391464a55d1"
+  },
+  "description": "¿Cuál es la sintaxis correcta para usar async y await en JavaScript?",
+  "answers": [
+    "async function myFunction() { letresult = await myPromise; } "
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67bf9a9e33def391464a55d4"
+  },
+  "description": "¿Qué hace el siguiente código?",
+  "answers": [
+    "Define una función asíncrona que obtiene datos de una API."
+  ],
+  "code": "async function fetchData() { \n  let response = await fetch('<https: api.example.com=\"\" data=\"\">'); \n  let data = await response.json(); \n  return data; }</https:>",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
 }]
