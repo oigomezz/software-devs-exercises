@@ -3904,4 +3904,514 @@
     "Desarrollo e Ingeniería"
   ],
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb105bd10b7e7949c89d8f"
+  },
+  "description": "¿El método then() retorna?",
+  "answers": [
+    "Promesa"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb1084d10b7e7949c89d92"
+  },
+  "description": "¿Para qué nos sirve la clase XMLHttpRequest?",
+  "answers": [
+    "Nos permite realizar solicitudes HTTP de una forma muy fácil."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb10a0d10b7e7949c89d95"
+  },
+  "description": "¿Cuál es el método recomendado por la comunidad para manejar asincronismo en JavaScript?",
+  "answers": [
+    "Async/await"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb10bcd10b7e7949c89d98"
+  },
+  "description": "Palabra que nos permite definir una función así­ncrona. ",
+  "answers": [
+    "async"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb10d8d10b7e7949c89d9b"
+  },
+  "description": "¿Cuáles son los argumentos que recibe una promesa?",
+  "answers": [
+    "resolve, reject"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb10fad10b7e7949c89d9e"
+  },
+  "description": "¿Para qué nos sirve el método \"catch()\"?",
+  "answers": [
+    "Registra la razón del rechazo."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb1111d10b7e7949c89da1"
+  },
+  "description": "¿Para qué utilizamos JSON.parse(xhttp.responseText)?",
+  "answers": [
+    "Convertir una respuesta de XML en un Objecto inmutable."
+  ],
+  "code": "",
+  "correctAnswer": -1,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb1133d10b7e7949c89da4"
+  },
+  "description": "¿Cuál es la forma correcta de retornar un Error en reject?",
+  "answers": [
+    "reject (new Error(Error))"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb114bd10b7e7949c89da7"
+  },
+  "description": "¿Nos permite ejecutar una serie de promesas secuencialmente?",
+  "answers": [
+    "Promise.all()"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb117cd10b7e7949c89daa"
+  },
+  "description": "¿Para qué nos sirve xhttp.status === 200?",
+  "answers": [
+    "Verificamos que el estatus de la petición HTTP resuelva el estado 200."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb11aad10b7e7949c89dad"
+  },
+  "description": "¿Cuál es la expresión que pausa la ejecución de la función así­ncrona y espera la resolución de la promise?",
+  "answers": [
+    "await"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb11e3d10b7e7949c89db0"
+  },
+  "description": "Es el problema de anidamiento de callbacks, que las promesas resuelven.",
+  "answers": [
+    "callback hell"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb11fcd10b7e7949c89db3"
+  },
+  "description": "¿Cómo aseguramos manejar los errores asincrónicos correctamente?",
+  "answers": [
+    "try { ...código } catch (error) { ...código }"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb1216d10b7e7949c89db6"
+  },
+  "description": "Una función callback es",
+  "answers": [
+    "Una función que se pasa a otra función como un argumento, invocada dentro de la función externa."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb1287d10b7e7949c89db9"
+  },
+  "description": "¿Cuál es el comando que nos permite inicializar nuestros proyectos en git?",
+  "answers": [
+    "git init"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb12a3d10b7e7949c89dbc"
+  },
+  "description": "¿Cuál es el comando que nos permite inicializar nuestros proyectos con npm?",
+  "answers": [
+    "npm init"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb12c4d10b7e7949c89dbf"
+  },
+  "description": "¿Qué funcionalidad tiene el archivo 'package.json'?",
+  "answers": [
+    "Contiene la información general del proyecto: scripts, dependencias y configuraciones de un proyecto."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb12e6d10b7e7949c89dc2"
+  },
+  "description": "¿Cuál es el comando para agregar el nombre del autor a la configuración por defecto de NPM?",
+  "answers": [
+    "npm set init.author.name \"example_user\""
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb1302d10b7e7949c89dc5"
+  },
+  "description": "¿Para qué se usa el comando 'npm init -y'?",
+  "answers": [
+    "Establece la configuración por defecto para el archivo package.json."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb1319d10b7e7949c89dc8"
+  },
+  "description": "¿Para quá nos sirve el flag '--save'?",
+  "answers": [
+    "Instala y agrega la entrada a las dependencias del archivo package.json."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb135bd10b7e7949c89dcb"
+  },
+  "description": "¿Para qué nos sirve el flag '--save-optional' o '-O'?",
+  "answers": [
+    "El paquete aparecerá en “optionalDependencies”."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb137cd10b7e7949c89dce"
+  },
+  "description": "Identifica cuál es una instalación de una dependencia global",
+  "answers": [
+    "npm install -g nodemon"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb139ad10b7e7949c89dd1"
+  },
+  "description": "¿Cuál es comando que nos permite identificar las dependencias globales instaladas en nuestro sistema?",
+  "answers": [
+    "npm list -g --depth 0"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb13b7d10b7e7949c89dd4"
+  },
+  "description": "¿Cuál es el ejemplo correcto para instalar la versión más reciente de un paquete?",
+  "answers": [
+    "npm install json-server@latest"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb13d4d10b7e7949c89dd7"
+  },
+  "description": "\n¿Cuál es el comando para listar los paquetes y módulos instalados?",
+  "answers": [
+    "npm list"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb13f1d10b7e7949c89dda"
+  },
+  "description": "¿Cuál es el alias de 'npm run start'?",
+  "answers": [
+    "npm start"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb1408d10b7e7949c89ddd"
+  },
+  "description": "¿Cuál es el comando que nos permite ver todo el output en la terminal/consola?",
+  "answers": [
+    "npm run build -dd"
+  ],
+  "code": "",
+  "correctAnswer": -1,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb1422d10b7e7949c89de0"
+  },
+  "description": "¿Cuál es el comando que nos permite ver una auditoría en formato json?",
+  "answers": [
+    "npm audit --json"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb1440d10b7e7949c89de3"
+  },
+  "description": "¿Cuál es el comando que nos permite publicar un paquete en npmjs.com?",
+  "answers": [
+    "npm publish"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb14f9d10b7e7949c89de8"
+  },
+  "description": "¿Por qué hacemos `JSON.stringify({})` en `localStorage.setItem('account', JSON.stringify({}))`?",
+  "answers": [
+    "Para que en localStorage no tengamos algo como: account = [object, Object], sino como: account = {}."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb150fd10b7e7949c89deb"
+  },
+  "description": "Podemos renderizar unos elementos del Navbar u otros dependiendo de si el usuario está loggeado o no gracias a:",
+  "answers": [
+    "Conditional Rendering"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb1527d10b7e7949c89dee"
+  },
+  "description": "Para capturar la información de un formulario, debemos:",
+  "answers": [
+    "Añadir el atributo ref en el elemento de HTML, usar el hook useRef y crear una instancia de FormData."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb153fd10b7e7949c89df1"
+  },
+  "description": "Si un usuario quiere ir a la vista Home, pero no tiene cuenta, ¿qué usaríamos en useRoutes para no permitirle el acceso a Home, pero que lo redirija a la página de SignIn?",
+  "answers": [
+    "{   path: ‘/’,   element: hasUserAnAccount ? <Home/>: <Navigate replace=\"\" to=\"{’/sign-in’}\"/> }"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67eb1557d10b7e7949c89df4"
+  },
+  "description": "¿Qué clases de TailwindCSS nos permiten centrar un elemento verticalmente con Flexbox?",
+  "answers": [
+    "flex y items-center"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
 }]

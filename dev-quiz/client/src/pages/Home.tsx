@@ -14,7 +14,7 @@ export const Home = () => {
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    getLastQuestions(5);
+    getLastQuestions(15);
     setTitle("Recientes");
   }, []);
 

@@ -44,7 +44,7 @@ export const QuestionForm = ({
       categories,
     };
     submit(newQuestion);
-    alert("Operacion exitosa!!!");
+    // alert("Operacion exitosa!!!");
     goToPage("home");
   };
 
