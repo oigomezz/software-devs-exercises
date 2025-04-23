@@ -4414,4 +4414,462 @@
     "Desarrollo e Ingeniería"
   ],
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f5a2a98c4b7216b874c757"
+  },
+  "description": "¿Cuál de las siguientes afirmaciones NO es una responsabilidad de un(a) desarrollador(a) frontend?",
+  "answers": [
+    "Hacer consultas a bases de datos."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f5a2c58c4b7216b874c75a"
+  },
+  "description": "Lo primero que debes conocer para convertirte en frontend developer es:",
+  "answers": [
+    "HTML, CSS y JS"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f5a2e48c4b7216b874c75d"
+  },
+  "description": "Un(a) desarrollador(a) senior toma decisiones basadas en experiencias y es responsable de sus resultados.",
+  "answers": [
+    "Verdadero",
+    "Falso"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f5a2fb8c4b7216b874c760"
+  },
+  "description": "¿Cuál de los siguientes datos NO es relevante en un curriculum vitae?",
+  "answers": [
+    "Estado civil"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f5a3188c4b7216b874c763"
+  },
+  "description": "Replicar páginas web existentes (como AirBnb o Starbucks) es una mala práctica porque demuestra poca creatividad.",
+  "answers": [
+    "Falso",
+    "Verdadero"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f5a3358c4b7216b874c766"
+  },
+  "description": "Para comenzar a trabajar con Frameworks de JavaScript, se recomienda:",
+  "answers": [
+    "Conocer muy bien las bases de JavaScript."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f5a3578c4b7216b874c769"
+  },
+  "description": "En un problema de live coding se recomienda empezar escribiendo el código y luego ir analizando el problema mientras lo vamos resolviendo.",
+  "answers": [
+    "Falso",
+    "Verdadero"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f5a37e8c4b7216b874c76c"
+  },
+  "description": "¿Las preguntas de entrevistas están diseñadas para ver qué tan profundo es tu conocimiento en general?",
+  "answers": [
+    "Verdadero",
+    "Falso"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f5a39e8c4b7216b874c76f"
+  },
+  "description": "En una entrevista técnica se recomienda:",
+  "answers": [
+    "Tener buena actitud, escuchar sugerencias, ser puntual y hacer preguntas sobre la empresa al finalizar."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f5a3bc8c4b7216b874c772"
+  },
+  "description": "La tranquilidad y seguridad en una entrevista técnica son:",
+  "answers": [
+    "Una buena práctica para que los nervios no te jueguen una mala pasada, se puede mejorar con técnicas de respiración."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f5a3d18c4b7216b874c775"
+  },
+  "description": "Para una entrevista técnica es importante:",
+  "answers": [
+    "Estar cómodo(a), tener listo el ambiente de desarrollo y estar concentrado(a)."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f5a3ea8c4b7216b874c778"
+  },
+  "description": "¿Cuál es el primer paso que debemos seguir para desarrollar una prueba técnica?",
+  "answers": [
+    "Tener un entendimiento general del problema que vamos a resolver."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f5a4078c4b7216b874c77b"
+  },
+  "description": "¿En una prueba técnica es recomendable usar el framework con el que mejor te sientas trabajando?",
+  "answers": [
+    "Verdadero",
+    "Falso"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f5a4248c4b7216b874c77e"
+  },
+  "description": "\n¿Cuál de los siguientes aspectos NO se debe tener en cuenta a la hora de ejecutar una prueba técnica?",
+  "answers": [
+    "Dejar el proyecto sin README."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f5a43e8c4b7216b874c781"
+  },
+  "description": "Es recomendable hacer proyectos y subirlos a NPM para que otras personas lo usen y puedan contribuir.",
+  "answers": [
+    "Verdadero",
+    "Falso"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68093b3ff079da63d40c1991"
+  },
+  "description": "¿Cómo se comunican el lado del Frontend y el Backend?",
+  "answers": [
+    "Por medio de APIs sobre HTTP."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68093b64f079da63d40c1994"
+  },
+  "description": "¿Cuál de las siguientes afirmaciones lograría explicar que es un Framework?",
+  "answers": [
+    "Un Framework de backend te da buenas prácticas y arquitectura base para construir un producto."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68093b7cf079da63d40c1997"
+  },
+  "description": "¿A qué categoría pertenece el rango de error de status code 500 de HTTP?",
+  "answers": [
+    "Server Error"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68093bb8f079da63d40c199a"
+  },
+  "description": "¿Cuál es el formato de datos que retorna una REST API?",
+  "answers": [
+    "JSON"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68093bd0f079da63d40c199d"
+  },
+  "description": "¿Cuál es la responsabilidad del método POST dentro de una arquitectura  REST API?",
+  "answers": [
+    "Crear"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68093be6f079da63d40c19a0"
+  },
+  "description": "¿Cuál es la responsabilidad del método PATCH dentro de una arquitectura REST API?",
+  "answers": [
+    "Editar"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68093c14f079da63d40c19a3"
+  },
+  "description": "¿Cuál de las siguientes afirmaciones lograría describir el concepto de DevOps?",
+  "answers": [
+    "DevOps es la práctica de combinar el desarrollo de software con la parte operativa."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68093c35f079da63d40c19a6"
+  },
+  "description": "¿Las cookies se pueden usar para almacenar información tanto en los navegadores como en apps móviles?",
+  "answers": [
+    "Falso",
+    "Verdadero"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68093c51f079da63d40c19a9"
+  },
+  "description": "¿Lo más común es que cada base de datos provee drivers de conexión para cada lenguaje de programación?",
+  "answers": [
+    "Verdadero",
+    "Falso"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68093c72f079da63d40c19ac"
+  },
+  "description": "¿Cuál es más fácil de implementar: escalamiento horizontal o escalaminto vertical?",
+  "answers": [
+    "Escalamiento vertical"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68093c89f079da63d40c19af"
+  },
+  "description": "\n¿Cuál puede soportar alta disponibilidad: escalamiento horizontal o escalaminto vertical?",
+  "answers": [
+    "Escalamiento horizontal"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68093ca1f079da63d40c19b2"
+  },
+  "description": "¿Cuál de las siguientes afirmaciones lograría describir el concepto de replicación en las bases de datos?",
+  "answers": [
+    "Es el proceso de almacenar información en varios nodos que entre sí están sincronizados."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68093cb6f079da63d40c19b5"
+  },
+  "description": "¿Cuáles de los siguientes escenarios son un gran caso de uso para implementar un sistema de caché en las peticiones?",
+  "answers": [
+    "Blogs y tiendas online."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68093cd2f079da63d40c19b8"
+  },
+  "description": "¿Cuál de las siguientes afirmaciones lograría explicar mejor el concepto de colas de tareas?",
+  "answers": [
+    "Las colas de tareas pueden delegar carga de procesamiento para evitar cuellos de botella al tratar de atender todas las solicitudes al tiempo."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68093cebf079da63d40c19bb"
+  },
+  "description": "¿Cuáles son las ventajas de Server Side Rendering?",
+  "answers": [
+    "Posicionamiento en buscadores (SEO) y mejor rendimiento / performance."
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
 }]
