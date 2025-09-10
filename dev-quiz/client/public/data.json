@@ -4872,4 +4872,214 @@
     "Desarrollo e Ingeniería"
   ],
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686ec8a67a99e62e16c9004c"
+  },
+  "description": "¿Cuál es la instrucción correcta para seleccionar todas las columnas de una tabla llamada \"empleados\"?",
+  "answers": [
+    "SELECT * FROM empleados"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686ec8c17a99e62e16c9004f"
+  },
+  "description": "¿Qué tipo de JOIN se utiliza para retornar todas las filas cuando hay una coincidencia en ambas tablas?",
+  "answers": [
+    "INNER JOIN"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686ec8da7a99e62e16c90052"
+  },
+  "description": "Cuál es la instrucción correcta para insertar una nueva fila en la tabla \"clientes\"?",
+  "answers": [
+    "INSERT INTO clientes (nombre, edad) VALUES ('Juan', 30);"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686ec8f67a99e62e16c90055"
+  },
+  "description": "¿Cuál es la cláusula correcta para seleccionar todos los empleados cuyo salario sea mayor a 50000?",
+  "answers": [
+    "SELECT * FROM empleados WHERE salario > 50000;"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686ec90d7a99e62e16c90058"
+  },
+  "description": "¿Cuál es la instrucción para obtener la suma de la columna \"salario\" de la tabla \"empleados\"?",
+  "answers": [
+    "SELECT SUM(salario) FROM empleados;"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686ec9317a99e62e16c9005b"
+  },
+  "description": "¿Cuál es la instrucción correcta para agrupar por la columna \"departamento\" y contar el número de empleados en cada departamento?",
+  "answers": [
+    "SELECT departamento, COUNT(*) FROM empleados GROUP BY departamento;"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686ec9457a99e62e16c9005e"
+  },
+  "description": "¿Cuál es la instrucción correcta para filtrar los grupos que tienen más de 10 empleados?",
+  "answers": [
+    "SELECT departamento, COUNT(*) FROM empleados GROUP BY departamento HAVING COUNT(*) > 10;"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686ec95d7a99e62e16c90061"
+  },
+  "description": "¿Cuál es la instrucción correcta para crear una tabla llamada \"productos\" con las columnas \"id\", \"nombre\" y \"precio\"?",
+  "answers": [
+    "CREATE TABLE productos (id INT, nombre VARCHAR(50), precio DECIMAL(10, 2));"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686ec99e7a99e62e16c90066"
+  },
+  "description": "¿Cuál es la instrucción correcta para definir \"id\" en SQL como clave primaria al crear una tabla \"clientes\"?",
+  "answers": [
+    "CREATE TABLE clientes (id INT PRIMARY KEY, nombre VARCHAR(50));"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686ec9c97a99e62e16c9006b"
+  },
+  "description": "¿Cuál es la instrucción correcta para crear un procedimiento almacenado llamado \"ActualizarSalario\"?",
+  "answers": [
+    "CREATE PROCEDURE ActualizarSalario AS BEGIN UPDATE empleados SET salario = salario * 1.1; END;"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686ec9e07a99e62e16c9006d"
+  },
+  "description": "¿Cuál es la instrucción correcta para crear un índice en la columna \"apellido\" de la tabla \"empleados\"?",
+  "answers": [
+    "CREATE INDEX idx_apellido ON empleados(apellido);"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686ec9f87a99e62e16c90070"
+  },
+  "description": "¿Qué tipo de JOIN devuelve todas las filas de la tabla de la izquierda y las filas coincidentes de la tabla de la derecha?",
+  "answers": [
+    "LEFT JOIN"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686eca147a99e62e16c90073"
+  },
+  "description": "Cuál es la instrucción correcta para seleccionar todos los empleados que trabajan en los departamentos 'Ventas' o 'Marketing' y cuyo nombre comience con la letra 'A'?",
+  "answers": [
+    "SELECT * FROM empleados WHERE departamento IN ('Ventas', 'Marketing') AND nombre LIKE 'A%';"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686eca2d7a99e62e16c90076"
+  },
+  "description": "¿Cuál es la diferencia entre DELETE, DROP y TRUNCATE?",
+  "answers": [
+    "DELETE elimina filas específicas de una tabla sin afectar su estructura, DROP Elimina la tabla , incluyendo su estructura y TRUNCATE Elimina todas las filas de una tabla pero mantiene su estructura"
+  ],
+  "code": "",
+  "correctAnswer": 0,
+  "categories": [
+    "Desarrollo e Ingeniería"
+  ],
+  "__v": 0
 }]
